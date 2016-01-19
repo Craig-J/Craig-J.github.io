@@ -19,7 +19,9 @@
         <link rel="stylesheet" href="css/font-awesome.css">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="css/grid_flip.css">
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -48,7 +50,6 @@
                         <li><a href="#about"><i class="fa fa-pencil"></i>About Me</a></li>
                         <li><a href="#projects"><i class="fa fa-briefcase"></i>Projects</a></li>
                         <li><a href="#cv"><i class="fa fa-file-text-o"></i>CV</a></li>
-                        <li><a href="#contact"><i class="fa fa-comments"></i>Contact Me</a></li>
                     </ul>
                 </div>
             </div>
@@ -69,7 +70,6 @@
                     <li><a href="#about"><i class="fa fa-pencil"></i>About Me</a></li>
                     <li><a href="#projects"><i class="fa fa-briefcase"></i>Portfolio</a></li>
                     <li><a href="#cv"><i class="fa fa-file-text-o"></i>CV</a></li>
-                    <li><a href="#contact"><i class="fa fa-comments"></i>Contact Me</a></li>
                 </ul>
             </div> <!-- .main-navigation -->
             <div class="social-icons">
@@ -92,6 +92,7 @@
 
         <!-- MAIN CONTENT -->
         <div class="main-content">
+
             <div class="fluid-container">
 
                 <div class="content-wrapper">
@@ -101,91 +102,129 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h4 class="widget-title">Learn About Me</h4>
-                            <div class="about-image">
+                            <!--<div class="about-image">
                                 <img src="img/8.jpg" alt="about me">
-                            </div>
-                            <p>Volton is free <a rel="nofollow" href="http://www.templatemo.com/page/1">responsive mobile template</a> from <span class="blue">template</span><span class="green">mo</span> website. You can use this template for any purpose. Please tell your friends about it. Thank you. Credit goes to <a rel="nofollow" href="http://unsplash.com">Unsplash</a> for images used in this design. You can <strong>change menu icons</strong> by checking <a rel="nofollow" href="http://fontawesome.info/font-awesome-icon-world-map/">Font Awesome</a> (version 4). Example: <strong>&lt;i class=&quot;fa fa-camera&quot;&gt;&lt;/i&gt;</strong></p>
+                            </div> -->
+                            <p>About me will go here.</p>
                             <hr>
                         </div>
                     </div> <!-- #about -->
                     </div>
 
                     <!-- PROJECTS -->
-                    <div class="page-section" id="projects">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="widget-title">Portfolio</h4>
-                            <p>Below are concise overviews of the most notable projects I have worked on. Most of them are university coursework.</p>
-                        </div>
-                    </div>
-                    <div class="row projects-holder">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="img/1.jpg" alt="">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="#">Pellentesque porta ligula</a></h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus</p>
-                                    </div>
+                    <div class="page-section" class="grid" id="projects">
+                      <div class="row">
+                          <div class="col-md-12">
+                              <h4 class="widget-title">Portfolio</h4>
+                              <p>Below are descriptions of the most notable projects I have worked on. Most of them are university coursework.</p>
+                          </div>
+                      </div>
+
+                      <div class="row projects-holder">
+
+                          <div class="col-md-4 col-sm-6">
+                            <div class="tile">
+                              <div class="project-item">
+                                <div class="content">
+                                  <img src="img/Galaxea.png" alt="Galaxea">
+                                  <div class="project-hover">
+                                      <div class="inside">
+                                          <h5 style="color:#FF9900">Group Project</h5>
+                                          <p>Brief summary here.</p>
+                                      </div>
+                                  </div>
+                                  <div class="expanded-content">
+                                    <h1>Test</h1>
+                                    <p>
+                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    </p>
+                                    <img src="img/Galaxea.png" alt="Galaxea">
+                                  </div>
                                 </div>
+                              </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="img/Galaxea.png" alt="Galaxea">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="#">Group Project</a></h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus</p>
-                                    </div>
+                          </div>
+
+                          <div class="col-md-4 col-sm-6">
+                            <div class="tile">
+                              <div class="project-item">
+                                <div class="content">
+                                  <img src="img/Galaxea.png" alt="Galaxea">
+                                  <div class="project-hover">
+                                      <div class="inside">
+                                          <h5 style="color:#FF9900">Group Project</h5>
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus</p>
+                                      </div>
+                                  </div>
                                 </div>
+                              </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="img/gas_giant_normal.jpg" alt="">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="#">1D Texture Manipulated Icosphere</a></h5>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus.</p>
-                                    </div>
+                          </div>
+
+                          <div class="col-md-4 col-sm-6">
+                            <div class="tile">
+                              <div class="project-item">
+                                <div class="content">
+                                  <img src="img/gas_giant_normal.jpg" alt="">
+                                  <div class="project-hover">
+                                      <div class="inside">
+                                          <h5 style="color:#FF9900">1D Texture Manipulated Icosphere</h5>
+                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam cursus.</p>
+                                      </div>
+                                  </div>
                                 </div>
+                              </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="img/opengl.jpg" alt="">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="#">OpenGL 3.0 Graphics Project</a></h5>
-                                        <p>Quisque mattis sit amet dolor eu scelerisque. Vivamus bibendum massa et nisl tempus commodo.</p>
-                                    </div>
+                          </div>
+
+                          <div class="col-md-4 col-sm-6">
+                            <div class="tile">
+                              <div class="project-item">
+                                <div class="content">
+                                  <img src="img/opengl.jpg" alt="">
+                                  <div class="project-hover">
+                                      <div class="inside">
+                                          <h5 style="color:#FF9900">OpenGL 3.0 Graphics Project</h5>
+                                          <p>Quisque mattis sit amet dolor eu scelerisque. Vivamus bibendum massa et nisl tempus commodo.</p>
+                                      </div>
+                                  </div>
                                 </div>
+                              </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="img/generic_space_game.png" alt="">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="#">Space Game with Spectator Client</a></h5>
-                                        <p>Quisque mattis sit amet dolor eu scelerisque. Vivamus bibendum massa et nisl tempus commodo.</p>
-                                    </div>
+                          </div>
+
+                          <div class="col-md-4 col-sm-6">
+                            <div class="tile">
+                              <div class="project-item">
+                                <div class="content">
+                                  <img src="img/generic_space_game.png" alt="">
+                                  <div class="project-hover">
+                                      <div class="inside">
+                                          <h5 style="color:#FF9900">Space Game with Spectator Client</h5>
+                                          <p>Quisque mattis sit amet dolor eu scelerisque. Vivamus bibendum massa et nisl tempus commodo.</p>
+                                      </div>
+                                  </div>
                                 </div>
+                              </div>
                             </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="project-item">
-                                <img src="img/pathfinding.png" alt="">
-                                <div class="project-hover">
-                                    <div class="inside">
-                                        <h5><a href="#">Threaded Pathfinding</a></h5>
-                                        <p>Quisque mattis sit amet dolor eu scelerisque. Vivamus bibendum massa et nisl tempus commodo.</p>
-                                    </div>
+                          </div>
+
+                          <div class="col-md-4 col-sm-6">
+                            <div class="tile">
+                              <div class="project-item">
+                                <div class="content">
+                                  <img src="img/pathfinding.png" alt="">
+                                  <div class="project-hover">
+                                      <div class="inside">
+                                          <h5 style="color:#FF9900">Threaded Pathfinding</h5>
+                                          <p>Quisque mattis sit amet dolor eu scelerisque. Vivamus bibendum massa et nisl tempus commodo.</p>
+                                      </div>
+                                  </div>
                                 </div>
+                              </div>
                             </div>
-                        </div>
-                    </div> <!-- .projects-holder -->
+                          </div>
+                      </div> <!-- .projects-holder -->
                     </div>
                     <hr>
 
@@ -202,41 +241,6 @@
                     </div>
                     <hr>
 
-                    <!-- CONTACT -->
-                    <div class="page-section" id="contact">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h4 class="widget-title">Contact Me</h4>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <form action="#" method="post" class="contact-form">
-                            <fieldset class="col-md-4 col-sm-6">
-                                <input type="text" id="your-name" placeholder="Your Name...">
-                            </fieldset>
-                            <fieldset class="col-md-4 col-sm-6">
-                                <input type="email" id="email" placeholder="Your Email...">
-                            </fieldset>
-                            <fieldset class="col-md-4 col-sm-12">
-                                <input type="text" id="your-subject" placeholder="Subject...">
-                            </fieldset>
-                            <fieldset class="col-md-12 col-sm-12">
-                                <textarea name="message" id="message" cols="30" rows="6" placeholder="Leave your message..."></textarea>
-                            </fieldset>
-                            <fieldset class="col-md-12 col-sm-12">
-                                <input type="submit" class="button big default" value="Send Message">
-                            </fieldset>
-                        </form>
-                    </div> <!-- .contact-form -->
-                    </div>
-                    <hr>
-
-                    <div class="row" id="footer">
-                        <div class="col-md-12 text-center">
-                            <!-- <p class="copyright-text">Copyright &copy; 2016 Company Name</p> -->
-                        </div>
-                    </div>
-
                 </div>
 
             </div>
@@ -245,6 +249,7 @@
         <script src="js/vendor/jquery-1.10.2.min.js"></script>
         <script src="js/min/plugins.min.js"></script>
         <script src="js/min/main.min.js"></script>
-
+        <script src='https://cdn.rawgit.com/GoogleChrome/flipjs/master/dist/flip.js'></script>
+          <script src="js/grid_flip.js"></script>
     </body>
 </html>
