@@ -35,6 +35,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline;
 }
 
+.row {
+  margin: auto;
+}
+
 .blue {
 	color: #06C;
 }
@@ -263,7 +267,7 @@ hr {
 }
 
 .page-section {
-  padding-top: 80px;
+  padding-top: 40px;
 }
 
 /*---------------------------------------------------------
