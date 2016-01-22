@@ -4,6 +4,11 @@
 var elements = document.querySelectorAll('.content');
 var expandedClass = 'expanded';
 
+    // Scroll disabling script
+    var $body = $('body'),
+        scrollDisabled = false,
+        scrollTop;
+
 // Standard FLIP
 // https://aerotwist.com/blog/flip-your-animations/#the-general-approach
 function expand(flip) {
@@ -11,7 +16,23 @@ function expand(flip) {
   flip.last(expandedClass);
   flip.invert();
   flip.play();
+
+      // Scroll disabling script
+      if (scrollDisabled)
+      {
+        return;
+      }
+      scrollTop = $(window).scrollTop();
+
+      $body.addClass('noscroll')
+      .css({
+      top: -1 * scrollTop
+      });
+
+      scrollDisabled = true;
 }
+
+
 
 // Reverse/close
 // In this round we remove the expanded class to calculate the 'inversion'
@@ -22,6 +43,17 @@ function contract(flip) {
   flip.last();
   flip.invert();
   flip.play();
+
+      // Scroll disabling script
+      if (!scrollDisabled)
+      {
+        return;
+      }
+
+      $body.removeClass('noscroll');
+      $(window).scrollTop(scrollTop);
+
+      scrollDisabled = false;
 }
 
 // Event subscription

@@ -112,10 +112,12 @@
                     <div class="row">
                         <div class="col-md-12">
                             <h4 class="widget-title">About Me</h4>
-                            <!--<div class="about-image">
-                                <img src="img/8.jpg" alt="about me">
-                            </div> -->
-                            <p>I am a fourth year Computer Games Technology student at the University of Abertay Dundee. I am passionate about gaming and computers.</p>
+                            <p>Fourth year Computer Games Technology student at the University of Abertay Dundee.<br>My passions include:</p>
+                            <ul>
+                              <li>Computer Gaming - Mostly interesting mechanics and competitive games. I enjoy theorycrafting and customization.</li>
+                              <li>Programming - I like to tinker with code to write clean and intuitive abstractions. I believe comments should only be required at complex/ambiguous code.</li>
+                              <li>Computer Hardware - Components and Peripherals. I have an interest in high-end hardware.</li>
+                            </ul>
                         </div>
                     </div> <!-- #about -->
                     </div>
@@ -126,7 +128,7 @@
                       <div class="row">
                           <div class="col-md-12">
                               <h4 class="widget-title">Portfolio</h4>
-                              <p>Below are descriptions of the most notable projects I have worked on. Most of them are university coursework. A brief summary of each project is displayed on mouseover. Click a tile to expand for a detailed view.</p>
+                              <p>Below are descriptions of the most notable projects I have worked on.<br>A brief summary of each project is displayed on mouseover. Click a tile to expand for a detailed view.</p>
                           </div>
                       </div>
 
@@ -140,15 +142,53 @@
                                   <div class="project-hover">
                                       <div class="inside">
                                           <h5>Group Project</h5>
-                                          <p>Brief summary here.</p>
+                                          <p>During my third year at university I participated in a group project in a team of 8.</p>
+                                          <p>Over the course of 8 months we created a 2D game conforming to a brief an external client.</p>
                                       </div>
                                   </div>
                                   <div class="expanded-content">
-                                    <h5>Test</h5>
-                                    <p>
-                                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </p>
-                                    <img src="img/Galaxea.png" alt="Galaxea">
+                                    <div class="row">
+                                      <div class="col-md-6 col-sm-12">
+                                        <h4>Galaxea - Professional Group Project</h4>
+                                        <h5>Overview</h5>
+                                        <p>During my third year at university I participated in a group project in a team of 8.</p>
+                                        <p>Over the course of 8 months we created a 2D game conforming to a brief an external client.</p>
+                                        <p>Our client, FuturLab, collaborated by providing direction and feedback over the course of the project.</p>
+                                        <p>The team included</p>
+                                        <ul>
+                                          <li>Me as the engine programmer,</li>
+                                          <li>1 gameplay programmer,</li>
+                                          <li>1 production manager,</li>
+                                          <li>1 game designer,</li>
+                                          <li>3 artists,</li>
+                                          <li>1 sound engineer.</li>
+                                        </ul>
+                                        <p>A video showcasing a complete playthrough of the game is available below. The video quality is not ideal due to recording on an external camera.</p>
+                                      </div>
+                                      <div class="col-md-6 col-sm-12">
+                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0tP1YnQUdeQ?&showinfo=0" frameborder="0" allowfullscreen></iframe>
+                                      </div>
+                                    </div>
+
+                                    <div class="row">
+                                      <div class="col-md-6 col-sm-12">
+                                        <h5>My Role</h5>
+                                        <p>As the engine programmer my job was to structure the application and provide the gameplay programmer with the tools necessary to focus on gameplay.</p>
+                                        <p>I managed the Git resository for the project. The repository is publicly viewable <a href="https://github.com/TeamAurora/ProjectGenres">here</a>. Building the application will not be possible as the Abertay Framework is not included and a PSVita devkit is required.</p>
+                                        <p>The work I accomplished during my time on the project includes:</p>
+                                        <ul>
+                                          <li>The overall application structure including the state machine.<br>I created the image below near the start of the project to illustrate the original design for the application structure to the team. The final structure differed a little from this image. LevelSelect became a part of MenuState and the ScoreScreen was simply an overlay shown during the level at the end rather than a whole state.</li>
+                                          <li>All code pertaining to the AppState base class, the IntroState, the MenuState and the majority of the LevelState base class was written by me.</li>
+                                          <li>The tiling system, including the loading funtionality, the physics bodies using Box2D and the collision response. Levels are loaded in using RapidXML to parse a .tmx file.</li>
+                                          <li>All menus and the in-game user interface.</li>
+                                          <li>The camera functionality.</li>
+                                        </ul>
+                                      </div>
+                                      <div class="col-md-6 col-sm-12">
+                                        <img src="img/Application_Hierarchy.png"></img>
+                                      </div>
+                                    </div>
+
                                   </div>
                                 </div>
                               </div>

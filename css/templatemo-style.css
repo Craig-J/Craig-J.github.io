@@ -58,7 +58,7 @@ body {
 
 ol,
 ul {
-  list-style: none;
+  list-style: circle;
 }
 
 blockquote,
@@ -184,6 +184,7 @@ body {
   color: #777777;
   font-family: 'robotoregular';
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 a {
@@ -378,11 +379,11 @@ h3.profile-title {
     -webkit-border-radius: 50px;
     border-radius: 50px;
     overflow: hidden;
-    margin-right: 30px;
+    margin-right: 20px;
   }
   .responsive-header .profile-content {
     text-align: left;
-    margin-top: 30px;
+    margin-top: 20px;
     overflow: hidden;
   }
 }
@@ -390,6 +391,7 @@ h3.profile-title {
 @media screen and (max-width: 992px) {
   .top-section {
     padding-bottom: 0;
+    padding: 20px;
   }
 }
 

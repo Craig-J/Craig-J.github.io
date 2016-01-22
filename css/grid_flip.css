@@ -34,7 +34,7 @@
 .content {
   width: 100%;
   height: 100%;
-  border-bottom: 10px solid #FF9900;
+  border-bottom: 4px solid #FF9900;
   cursor: pointer;
   overflow: hidden;
 }
@@ -46,8 +46,14 @@
   bottom: 0;
   left: 0;
   margin: auto;
+  overflow: auto;
   z-index: 5;
   background: #111;
+}
+
+.noscroll
+{
+  position: fixed;
 }
 
 .expanded .project-hover, .expanded > img, .expanded-content {
@@ -56,13 +62,45 @@
 
 .expanded .expanded-content {
   display: block;
+  overflow: auto;
+  padding: 40px;
 }
 
-.expanded .expanded-content img {
-  width: initial;
-  height: initial;
+.expanded-content img {
+  width: auto;
+  height: auto;
+  padding: 20px;
+}
+
+.expanded-content iframe {
+  padding: 20px;
+}
+
+.expanded-content h4 {
+  color: #FF9900;
+  padding-bottom: 20px;
+  font-size: 200%;
 }
 
 .expanded-content h5 {
-  
+  color: #FF9900;
+  padding-bottom: 20px;
+}
+
+.expanded .expanded-content {
+  padding: 20px;
+}
+
+.expanded-content .row {
+  margin: 40px;
+}
+
+@media screen and (max-width: 992px) {
+  .expanded .expanded-content {
+    padding: 10px;
+  }
+
+  .expanded-content .row {
+    margin: 5px;
+  }
 }
