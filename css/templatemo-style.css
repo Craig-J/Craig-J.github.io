@@ -3,27 +3,6 @@ Volton Template
 http://www.templatemo.com/preview/templatemo_441_volton
 */
 
-@font-face {
-  font-family: 'robotolight';
-  src: url("../fonts/Roboto-Light-webfont.eot");
-  src: url("../fonts/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Light-webfont.woff") format("woff"), url("../fonts/Roboto-Light-webfont.ttf") format("truetype"), url("../fonts/Roboto-Light-webfont.svg#robotolight") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'robotoregular';
-  src: url("../fonts/Roboto-Regular-webfont.eot");
-  src: url("../fonts/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular-webfont.woff") format("woff"), url("../fonts/Roboto-Regular-webfont.ttf") format("truetype"), url("../fonts/Roboto-Regular-webfont.svg#robotoregular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'robotobold';
-  src: url("../fonts/Roboto-Bold-webfont.eot");
-  src: url("../fonts/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold-webfont.woff") format("woff"), url("../fonts/Roboto-Bold-webfont.ttf") format("truetype"), url("../fonts/Roboto-Bold-webfont.svg#robotobold") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
 /*---------------------------------------------------------
  1. Reset
 -------------------------------------------------------- */
@@ -182,26 +161,26 @@ body {
   font-size: 14px;
   line-height: 24px;
   color: #777777;
-  font-family: 'robotoregular';
+  font-family: 'Play';
   overflow-x: hidden;
   overflow-y: scroll;
 }
 
 a {
-  color: #006699;
+  color: #63a52a;
   -webkit-transition: all 150ms ease-in-out;
   -moz-transition: all 150ms ease-in-out;
   -ms-transition: all 150ms ease-in-out;
   -o-transition: all 150ms ease-in-out;
   transition: all 150ms ease-in-out;
-  text-decoration: none !important;
 }
 a:hover {
-  color: #555555;
+  text-decoration: underline;
+  color: #90D355;
 }
 
 h1, h2, h3, h4, h5 {
-  color: #555555;
+  color: #FF9900;
 }
 
 ::-webkit-input-placeholder {
@@ -241,19 +220,19 @@ h1, h2, h3, h4, h5 {
 }
 
 .content-wrapper {
-  padding: 0 80px;
+  padding: 0 60px;
 }
 @media screen and (max-width: 992px) {
   .content-wrapper {
-    padding: 0 30px;
+    padding: 0 20px;
   }
 }
 
 h4.widget-title {
   font-size: 16px;
-  font-family: 'robotobold';
+  font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 hr {
@@ -263,12 +242,12 @@ hr {
   width: 100%;
   height: 4px;
   background: #FF9900;
-  margin-top: 40px;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .page-section {
-  padding-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 /*---------------------------------------------------------
@@ -297,7 +276,6 @@ hr {
 .profile-image {
   width: 150px;
   height: 150px;
-  border: 4px solid #FF9900;
   -webkit-border-radius: 75px;
   border-radius: 75px;
   overflow: hidden;
@@ -307,11 +285,14 @@ hr {
   width: 100%;
 }
 
+.profile-description {
+  font-size: 18px;
+}
+
 h3.profile-title {
   margin-bottom: 5px;
   color: #666;
-  font-size: 18px;
-  font-family: 'robotobold';
+  font-size: 24px;
 }
 
 .main-navigation {
@@ -367,11 +348,6 @@ h3.profile-title {
   }
 }
 @media screen and (max-width: 992px) {
-  .responsive-header p {
-    color: white;
-  }
-}
-@media screen and (max-width: 992px) {
   .responsive-header .profile-image {
     float: left;
     width: 100px;
@@ -400,10 +376,10 @@ h3.profile-title {
     padding: 10px;
   }
   .main-navigation a.active {
-    background: #5f6d7e !important;
+    background: #222 !important;
   }
   .main-navigation a:hover {
-    background: #5f6d7e !important;
+    background: #222 !important;
   }
 }
 
@@ -450,13 +426,15 @@ h3.profile-title {
 }
 .welcome-text h2 {
   font-size: 42px;
-  font-family: 'robotobold';
+  font-weight: bold;
   color: white;
   margin-bottom: 30px;
+  text-shadow: -2px 4px #222;
 }
 .welcome-text h5 {
-  font-size: 22px;
+  font-size: 24px;
   color: white;
+  text-shadow: -1px 2px #222;
 }
 
 /*------ about ------ */
@@ -474,9 +452,10 @@ h3.profile-title {
 .projects-holder {
   margin-right: 0;
   margin-left: 0;
-  margin-top: 40px;
+  margin-top: 20px;
 }
-.projects-holder .col-md-4,
+
+.projects-holder .col-md-6,
 .projects-holder .col-md-4 {
   padding-right: 1px;
   padding-left: 1px;
@@ -484,6 +463,7 @@ h3.profile-title {
 
 .project-item {
   width: 100%;
+  border-bottom: 4px solid #FF9900;
   margin-bottom: 2px;
   overflow: hidden;
   position: relative;
@@ -518,7 +498,7 @@ h3.profile-title {
   width: 100%;
   left: 0;
   top: 0;
-  padding: 30px;
+  padding: 20px;
 }
 .project-hover h5 {
   color:#FF9900;
@@ -532,7 +512,25 @@ h3.profile-title {
 }
 
 /*------ cv ------*/
-#cvpdf {
+.cv-container {
+  margin-left: -75px;
+  margin-right: -75px;
+  position: relative;
+  padding-bottom: 100%;
+  height: 0;
+  overflow: hidden;
+}
+@media screen and (max-width: 992px) {
+  .cv-container {
+  margin-left: -35px;
+  margin-right: -35px;
+  padding-bottom: 100%;
+}
+}
+.cv-container object {
+  position: absolute;
+  top:0;
+  left: 0;
   width: 100%;
-  height: 1073px;
+  height: 100%;
 }

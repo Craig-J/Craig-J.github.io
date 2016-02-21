@@ -1,7 +1,7 @@
 // We animate the content of the tiles/cells, not the tiles themselves. They are not absolutelty positioned and so animating them would cause layout changes, this would look strange and hurt performance.
 'use strict';
 
-var elements = document.querySelectorAll('.content');
+var elements = document.querySelectorAll('.expandable-content');
 var expandedClass = 'expanded';
 
     // Scroll disabling script

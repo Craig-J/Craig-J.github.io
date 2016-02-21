@@ -25,16 +25,9 @@
   padding: 2em 1em 1em;
 }
 
-.tile {
-  width: auto;;
-  height: auto;
-  margin: auto;
-}
-
-.content {
+.expandable-content {
   width: 100%;
   height: 100%;
-  border-bottom: 4px solid #FF9900;
   cursor: pointer;
   overflow: hidden;
 }
@@ -62,14 +55,14 @@
 
 .expanded .expanded-content {
   display: block;
-  overflow: auto;
-  padding: 40px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding: 20px;
 }
 
 .expanded-content img {
-  width: auto;
+  width: initial;
   height: auto;
-  padding: 20px;
 }
 
 .expanded-content iframe {
@@ -79,12 +72,13 @@
 .expanded-content h4 {
   color: #FF9900;
   padding-bottom: 20px;
-  font-size: 200%;
+  font-size: 24pt;
 }
 
 .expanded-content h5 {
   color: #FF9900;
   padding-bottom: 20px;
+  font-size: 16pt;
 }
 
 .expanded .expanded-content {
@@ -92,7 +86,7 @@
 }
 
 .expanded-content .row {
-  margin: 40px;
+  margin: 20px;
 }
 
 @media screen and (max-width: 992px) {
