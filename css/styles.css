@@ -1,0 +1,375 @@
+/*
+Adapted from Volton Template by Craig Jeffrey
+http://www.templatemo.com/preview/templatemo_441_volton
+*/
+
+/*---------------------------------------------------------
+ 1. Basic Style
+-------------------------------------------------------- */
+body {
+  font-size: 14px;
+  line-height: 24px;
+  color: #ccc;
+  background: #1e1e1e;
+  font-family: 'Play';
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+a {
+  color: #63a52a;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+a:hover {
+  text-decoration: underline;
+  color: #90D355;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #FF9900;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  font-size: 42px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+h4 {
+  font-size: 28px;
+}
+
+h5 {
+  font-size: 20px;
+  margin: 0;
+}
+
+hr {
+  position: relative;
+  outline: 0;
+  border: 0;
+  width: 100%;
+  height: 4px;
+  background: #FF9900;
+  margin: 0;
+}
+
+.center {
+  text-align: center;
+}
+
+/*---------------------------------------------------------
+ 2. Profile Bar
+-------------------------------------------------------- */
+.profile-bar {
+  width: 100%;
+  height: 150px;
+  top: 0;
+  z-index: 5;
+  position: fixed;
+  border-bottom: 4px solid #FF9900;
+  background: url("../img/pattern.png") repeat center;
+  text-shadow: 2px 2px #222;
+  text-align: center;
+}
+
+.profile-section {
+  padding: 10px 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: left;
+  width: 100%;
+  min-width: 400px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-image {
+  height: 100%;
+  display: inline-block;
+}
+.profile-image img {
+  height: 100%;
+}
+
+.profile-info {
+  display: inline-block;
+  margin: 10px;
+}
+
+.profile-title {
+  margin: 0;
+}
+
+.profile-description {
+  font-size: 18px;
+}
+
+.profile-icons {
+  display: block;
+}
+
+.profile-icons li {
+  display: block;
+}
+
+.profile-icons a {
+  font-size: 18px;
+  margin-right: 20px;
+  color: #ccc;
+}
+
+.profile-icons a:hover {
+  color: #ff9900;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-bar {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  
+  .profile-bar {
+    position: relative;
+    height: 100px;
+  }
+  
+  .profile-section {
+    min-width: 350px;
+  }
+  
+  .profile-title {
+    font-size: 24px;
+  }
+  
+  .profile-description {
+    font-size: 14px;
+  }
+  
+  .profile-icons a {
+  font-size: 14px;
+  }
+}
+
+/*---------------------------------------------------------
+ 3. Navigation Menu
+-------------------------------------------------------- */
+
+.navigation-menu {
+  width: 100%;
+  height: auto;
+  top: 150px;
+  z-index: 5;
+  position: fixed;
+  text-align: center;
+  background: #1e1e1e;
+  border-bottom: 4px solid #FF9900;
+}
+
+.navigation-menu li {
+  display: inline-block;
+}
+
+.navigation-menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: #ccc;
+  font-size: 18px;
+}
+
+.navigation-menu li a:hover {
+  background: #FF9900;
+  text-decoration: none;
+}
+
+.content-wrapper > div:target {
+  position: relative;
+}
+
+.content-wrapper > div,
+.content-wrapper > div:target ~ #home  {
+  display: none;
+  margin-top: -200px;
+  padding-top: 225px;
+}
+
+#home, .content-wrapper > div:target {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation-menu {
+    position: relative;
+    top: 0;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .navigation-menu li a {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+}
+
+/*---------------------------------------------------------
+ 4. Main Content
+-------------------------------------------------------- */
+
+
+.main-content {
+  position: relative;
+  top: 200px;
+  border-bottom: 4px solid #FF9900;
+}
+
+@media screen and (max-width: 768px) {
+  .main-content {
+    top: 0;
+  }
+
+  .container-fluid {
+    padding: 0;
+  }
+}
+
+.page-section {
+  margin-bottom: 20px;
+  position: relative;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -ms-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+
+/*------ about ------ */
+
+.about-picture {
+  text-align: center;
+}
+
+.about-picture img {
+  max-width: 100%;
+  border-radius: 10%;
+}
+
+/*------ projects ------ */
+
+.projects-holder {
+  margin-top: 20px;
+  padding: 0 40px;
+}
+
+@media screen and (max-width: 768px) {
+  .projects-holder {
+    padding: 0;
+  }
+}
+
+.project-item {
+  width: 100%;
+  box-shadow: 0 0 10px #666;
+  margin: 20px 10px;
+  overflow: hidden;
+  position: relative;
+}
+.project-item img {
+  max-width: 100%;
+  display: block;
+}
+.project-item:hover .project-hover {
+  top: 0;
+  opacity: 1;
+  visibility: visible;
+}
+
+.project-hover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 40px;
+  left: 0;
+  background: rgba(30, 30, 30, 0.9);
+  opacity: 0;
+  -webkit-transition: all 150ms linear;
+  -moz-transition: all 150ms linear;
+  -ms-transition: all 150ms linear;
+  -o-transition: all 150ms linear;
+  transition: all 150ms linear;
+}
+.project-hover .inside {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 20px;
+}
+.project-hover p {
+  color: #ccc;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.project-menu {
+  height: auto;
+  position: relative;
+  text-align: center;
+  background: #1e1e1e;
+  border-bottom: 4px solid #FF9900;
+}
+
+.project-menu li {
+  display: inline-block;
+}
+
+.project-menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: #ccc;
+  font-size: 18px;
+}
+
+.project-menu li a:hover {
+  background: #FF9900;
+  text-decoration: none;
+}
+
+/*------ cv ------*/
+
+.cv-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 100vh;
+}
+
+.cv-container object {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

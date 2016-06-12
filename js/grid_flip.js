@@ -62,9 +62,9 @@ var _loop = function () {
   var element = elements[i];
   var flip = new FLIP({
     element: element,
-    duration: 200
+    duration: 150
   });
-
+  
   element.addEventListener('click', function () {
     if (!element.classList.contains(expandedClass)) {
       expand(flip);
@@ -72,6 +72,7 @@ var _loop = function () {
       contract(flip);
     }
   });
+    
 };
 
 for (var i = 0; i < elements.length; i++) {
