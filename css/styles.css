@@ -136,12 +136,6 @@ hr {
 
 .profile-icons a {
   font-size: 18px;
-  margin-right: 20px;
-  color: #ccc;
-}
-
-.profile-icons a:hover {
-  color: #ff9900;
 }
 
 @media screen and (max-width: 768px) {
@@ -343,19 +337,21 @@ hr {
 
 .project-menu li {
   display: inline-block;
-}
-
-.project-menu li a {
-  display: block;
-  padding: 10px 20px;
-  color: #ccc;
   font-size: 18px;
 }
 
+.project-menu-back,
+.project-menu li a {
+  display: block;
+  padding: 10px 20px;
+}
+
+.project-menu-back:hover,
 .project-menu li a:hover {
   background: #FF9900;
   text-decoration: none;
 }
+
 
 /*------ cv ------*/
 

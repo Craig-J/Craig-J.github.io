@@ -30,9 +30,8 @@
   font-size: 28px;
 }
 
-.expandable-content .project-menu li,
-.expandable-content .project-menu li a {
-  font-size: 14px;
+.expandable-content .project-menu-back {
+ display: none; 
 }
 
 .expanded-main {
@@ -59,9 +58,8 @@
   font-size: 32px;
 }
 
-.expanded .project-menu li,
-.expanded .project-menu li a {
-  font-size: 18px;
+.expanded .project-menu-back {
+ display: inline-block; 
 }
 
 .expanded-content row {

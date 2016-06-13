@@ -2,9 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
 <head>
   <meta charset="utf-8">
@@ -22,12 +20,16 @@
 
   <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/external/normalize.css">
-  <script src="https://use.fontawesome.com/4ce13a966f.js"></script>
   <link rel="stylesheet" href="css/external/bootstrap.min.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/grid_flip.css">
+
+  <script src="https://use.fontawesome.com/4ce13a966f.js"></script>
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+  <script src="js/vendor/jquery-1.10.2.min.js"></script>
+  <script src="js/min/plugins.min.js"></script>
+  <script src='https://cdn.rawgit.com/GoogleChrome/flipjs/master/dist/flip.js'></script>
 
 </head>
 
@@ -198,8 +200,11 @@
                   <h3>RhythMIR</h3>
                   <div class="project-menu">
                     <ul>
+                      <li class="project-menu-back">
+                        Back
+                      </li>
                       <li>
-                        Language: C++
+                        C++
                       </li>
                       <li>
                         <a href="RhythMIR"><i class="fa fa-external-link"></i> Project Website</a>
@@ -207,6 +212,7 @@
                       <li>
                         <a href="https://github.com/Craig-J/RhythMIR"><i class="fa fa-github"></i> GitHub Repository</a>
                       </li>
+                    </ul>
                   </div>
 
                   <div class="expanded-content">
@@ -259,12 +265,17 @@
                   <h3>Galaxea - Group Project</h3>
                   <div class="project-menu">
                     <ul>
+                      <li class="project-menu-back">
+                        <i class="fa fa-chevron-circle-left"></i>
+                        Back
+                      </li>
                       <li>
-                        Language: C++
+                        C++
                       </li>
                       <li>
                         <a href="https://github.com/TeamAurora/ProjectGenres"><i class="fa fa-github"></i> GitHub Repository</a>
                       </li>
+                    </ul>
                   </div>
 
                   <div class="expanded-content">
@@ -352,9 +363,17 @@
                   <h3>Concurrent A* Pathfinding</h3>
                   <div class="project-menu">
                     <ul>
-                      <li>
-                        Language: C++
+                      <li class="project-menu-back">
+                        <i class="fa fa-chevron-circle-left"></i>
+                        Back
                       </li>
+                      <li>
+                        C++
+                      </li>
+                      <li>
+                        <a href="projects/pathfinding/Concurrent_Pathfinding.zip" download><i class="fa fa-download"></i> Download .zip (232KB)</a>
+                      </li>
+                    </ul>
                   </div>
 
                   <div class="expanded-content">
@@ -366,16 +385,46 @@
                         <p>
                           <ul>
                             <li>
-                              Implementation of A* pathfinding using Manhattan heuristic. Diagonal movement is allowed and weighted equal to orthogonal
-                              movement.
+                              Implementation of A* pathfinding using Manhattan heuristic.
                             </li>
                             <li>
-                              Task-based farming of the pathfinding done using C++11 threading library. In this example the same path is calculated 50
-                              times.
+                              Task-based farming of pathfinding done using C++11 threading library.
                             </li>
                             <li>
-                              Completed paths are outputted through a channel using a condition variable and a mutex. To prove the channel works, the first
-                              completed path outputs all keys on the path to the goal on the right.
+                              Completed paths are outputted through a channel using a condition variable and a mutex.
+                            </li>
+                          </ul>
+                          More details are available in the presentation for the project - available in the download.
+                        </p>
+
+                        <h4>Download</h4>
+                        <p>
+                          The download contains two Windows executables, the project presentation and the performance report.
+                          The first is the example shown on the right which calculates the shown path.
+                          The second randomizes the board (sometimes resulting in impossible paths).
+                        </p>
+
+                        <h4>Example</h4>
+                        <p>
+                          The example shown calculates the same path, depicted on the left of the image, 50 times. Diagonal movement is allowed and weighted equal to orthogonal movement.
+                          <ul>
+                            <li>
+                              ! is the start point. ? is the goal.
+                            </li>
+                            <li>
+                              # is an obstacle.
+                            </li>
+                            <li>
+                              $ is a cell on the best path.
+                            </li>
+                            <li>
+                              - is a rejected cell.
+                            </li>
+                            <li>
+                              + is a cell in the working set (candidate for being checked).
+                            </li>
+                            <li>
+                              To prove the channel works, the first completed path outputs the keys of all cells on the path to the goal - shown on the right.
                             </li>
                           </ul>
                         </p>
@@ -403,10 +452,8 @@
                     <div class="inside">
                       <h4>Space Game</h4>
                       <p>
-                        Generic Space Game was originally implemented on the PSVita using the Abertay Framework for the Console Game Development
-                        module.
-                        <br> I then ported it to SFML for desktop compatibility and implemented networking capabilities using
-                        WinSock for the Network Programming module.
+                        Generic Space Game was originally implemented on the PSVita using the Abertay Framework.
+                        I then ported it to SFML for desktop compatibility and implemented networking capabilities using WinSock.
                       </p>
                     </div>
                   </div>
@@ -414,9 +461,14 @@
                   <h3>Space Game</h3>
                   <div class="project-menu">
                     <ul>
-                      <li>
-                        Language: C++
+                      <li class="project-menu-back">
+                        <i class="fa fa-chevron-circle-left"></i>
+                        Back
                       </li>
+                      <li>
+                        C++
+                      </li>
+                    </ul>
                   </div>
 
                   <div class="expanded-content">
@@ -456,7 +508,7 @@
                     <div class="inside">
                       <h4>Gas Giant</h4>
                       <p>
-                        The mesh is an ico-sphere generated recursively from an icosahedron.<br> The sphere has a 1D texture
+                        The mesh is an ico-sphere generated recursively from an icosahedron. The sphere has a 1D texture
                         mapped vertically which is manipulated in the pixel shader using GPU generated simplex noise.
                       </p>
                     </div>
@@ -465,28 +517,64 @@
                   <h3>Gas Giant</h3>
                   <div class="project-menu">
                     <ul>
-                      <li>
-                        Language: C++
+                      <li class="project-menu-back">
+                        <i class="fa fa-chevron-circle-left"></i>
+                        Back
                       </li>
+                      <li>
+                        C++
+                      </li>
+                      <li>
+                        <a href="projects/gas_giant/ProceduralMethodsReport.pdf" download><i class="fa fa-download"></i> Download Report (6.18MB)</a>
+                      </li>
+                    </ul>
                   </div>
 
                   <div class="expanded-content">
 
                     <div class="row expanded-main">
 
-                      <div class="col-md-6">
+                      <div class="col-md-12">
+                        <div class="col-md-6">
                          <h4>Overview</h4>
                          <p>
                            <ul>
                              <li>
-
+                               Recursively generated icosphere mesh using midpoint displacement, the sphere is 1D texture mapped.
+                             </li>
+                             <li>
+                               GPU generated Simplex Noise used to deform the 1D texture, visually approximating a gas giant in real time.
+                             </li>
+                             <li>
+                               Gaussian blur and screen space texture distortion post processing effects.
                              </li>
                            </ul>
                          </p>
                        </div>
 
-                       <div class="col-md-6">
-                         <img src="img/pathfinding.png" alt="Pathfinding">
+                        <div class="col-md-6">
+                          <h4>Download</h4>
+                          <p>
+                            The download contains only the project report for now. The application will be included with the download soon.
+                          </p>
+                        </div>
+                      </div>
+
+                       
+
+                       <div class="col-md-4">
+                         <h4>Normal</h4>
+                         <img src="img/gas_giant_normal.jpg" alt="Gas Giant">
+                       </div>
+
+                       <div class="col-md-4">
+                         <h4>Gaussian Blurred</h4>
+                         <img src="img/gas_giant_blurred.jpg" alt="Gas Giant Blurred">
+                       </div>
+
+                       <div class="col-md-4">
+                         <h4>Distorted</h4>
+                         <img src="img/gas_giant_noise.jpg" alt="Gas Giant Distorted">
                        </div>
 
                     </div>
@@ -517,9 +605,14 @@
                   <h3>Space Scene</h3>
                   <div class="project-menu">
                     <ul>
-                      <li>
-                        Language: C++
+                      <li class="project-menu-back">
+                        <i class="fa fa-chevron-circle-left"></i>
+                        Back
                       </li>
+                      <li>
+                        C++
+                      </li>
+                    </ul>
                   </div>
 
                   <div class="expanded-content">
@@ -587,11 +680,7 @@
     </div>
   </div>
 
-  <script src="js/vendor/jquery-1.10.2.min.js"></script>
-  <script src="js/min/plugins.min.js"></script>
-  <script src="js/min/main.min.js"></script>
-  <script src='https://cdn.rawgit.com/GoogleChrome/flipjs/master/dist/flip.js'></script>
-  <script src="js/grid_flip.js"></script>
+<script src="js/grid_flip.js"></script>
 </body>
 
 </html>

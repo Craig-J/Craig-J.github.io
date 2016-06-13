@@ -2,6 +2,7 @@
 'use strict';
 
 var elements = document.querySelectorAll('.expandable-content');
+var back_buttons = document.querySelectorAll('.project-menu-back');
 var expandedClass = 'expanded';
 
     // Scroll disabling script
@@ -60,6 +61,7 @@ function contract(flip) {
 
 var _loop = function () {
   var element = elements[i];
+  var back_button = back_buttons[i];
   var flip = new FLIP({
     element: element,
     duration: 150
@@ -68,8 +70,13 @@ var _loop = function () {
   element.addEventListener('click', function () {
     if (!element.classList.contains(expandedClass)) {
       expand(flip);
-    } else {
+    }
+  });
+
+  back_button.addEventListener('click', function() {
+    if (element.classList.contains(expandedClass)) {
       contract(flip);
+      event.stopPropagation();
     }
   });
     
