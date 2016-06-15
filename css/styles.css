@@ -340,10 +340,14 @@ hr {
   font-size: 18px;
 }
 
+.project-menu .language {
+  padding: 10px;
+}
+
 .project-menu-back,
 .project-menu li a {
   display: block;
-  padding: 10px 20px;
+  padding: 10px;
 }
 
 .project-menu-back:hover,
