@@ -98,7 +98,8 @@
             </div>
             <div class="col-md-9">
               <p>
-                Scottish C++ programmer and game developer. Recently completed the <a href="http://www.abertay.ac.uk/studying/ug/comopgamestech/">Computer Games Technology</a>                course at <a href="http://www.abertay.ac.uk/">University of Abertay Dundee</a>.<br>
+                Scottish C++ programmer and game developer. <br>
+                <i class="fa fa-graduation-cap"></i>Recently graduated, achieving Upper Second Class (2:1) in the <a href="http://www.abertay.ac.uk/studying/ug/comopgamestech/">Computer Games Technology</a> course at <a href="http://www.abertay.ac.uk/">University of Abertay Dundee</a>.
               </p>
               <div class="row">
 
@@ -111,7 +112,7 @@
                     </li>
                     <li>
                       <h5>C++ Programming</h5>
-                      This is the language I know the most about. I have experience using most standard library features including containers,
+                      The language I am most proficient using. I have experience using most standard library features including containers,
                       algorithms, iterators, strings, I/O, multi-threading and filesystem (boost). I also have experience
                       using advanced features such as inheritance and templates.
                     </li>
@@ -177,7 +178,12 @@
           <h2>Portfolio</h2>
           <p class="center">
             Below are descriptions of the most notable projects I have worked on. Hover over a tile for a brief description. Click/tap
-            a tile to expand content (and again to close).
+            a tile to expand content.
+          </p>
+          <h3>Executable Prerequisites</h3>
+          <p class="center">
+            Running downloaded executables will require <a href="https://www.microsoft.com/en-gb/download/details.aspx?id=48145">VS2015 C++ Redistributable</a>.
+            For RhythMIR, the <a href="https://www.openal.org/downloads/">OpenAL Windows Installer</a> is also required.
           </p>
 
           <div class="row projects-holder">
@@ -186,7 +192,7 @@
               <div class="project-item">
                 <div class="expandable-content">
 
-                  <img src="projects/RhythMIR/splash.png" alt="RhythMIR">
+                  <img src="projects/RhythMIR/gameplay.png" alt="RhythMIR">
                   <div class="project-hover">
                     <div class="inside">
                       <h4>RhythMIR</h4>
@@ -226,16 +232,12 @@
                         a simple rhythm game. RhythMIR began as my fourth year honours project along with my dissertation
                         titled "Digital Music Information Retrieval for Computer Games" however I have continued development
                         of RhythMIR as a pet project.
-                        <br><br> RhythMIR has it's own website, please visit it for more details - or to download (it's free!).
+                        <br><br> RhythMIR has it's own website, please visit it for more details - or to download (it's free!).<br>
+
+                        <video width="1280" height="720" controls>
+                          <source src="projects/RhythMIR/trailer.mp4" type="video/mp4"> Your browser does not support HTML5 video.
+                        </video>
                       </p>
-
-                      <div class="col-md-6">
-                        <img src="projects/RhythMIR/gameplay.png" alt="RhythMIR Gameplay">
-                      </div>
-
-                      <div class="col-md-6">
-                        <img src="projects/RhythMIR/gameplay.png" alt="RhythMIR Gameplay">
-                      </div>
 
                     </div>
                     <!-- expanded-main -->
@@ -304,8 +306,7 @@
                           to focus on gameplay. The work I accomplished during my time on the project includes:
                           <ul>
                             <li>
-                              Managing the public GitHub repository for the project. Building the application will not be possible as the Abertay Framework
-                              is not included and a PSVita devkit is required.
+                              Managing the Git repository for the project.
                             </li>
                             <li>
                               Finite state machine for the overall application structure.
@@ -378,7 +379,7 @@
 
                     <div class="row expanded-main">
 
-                      <div class="col-md-6">
+                      <div class="col-lg-6">
                         <h4>Overview</h4>
                         <p>
                           <ul>
@@ -428,7 +429,7 @@
                         </p>
                       </div>
 
-                      <div class="col-md-6">
+                      <div class="col-lg-6">
                         <img src="projects/pathfinding/pathfinding.png" alt="Pathfinding">
                       </div>
 
@@ -445,7 +446,100 @@
             <div class="col-md-6 col-lg-4">
               <div class="project-item">
                 <div class="expandable-content">
-                  <img src="projects/space_game/generic_space_game.png" alt="Space Game">
+                  <img src="projects/ar_game/splash.png" alt="AR Game">
+                  <div class="project-hover">
+                    <div class="inside">
+                      <h4>Augmented Reality Game</h4>
+                      <p>
+                        A two-stage game involving a shape-matching puzzle stage and a battle stage where you avoid and shoot down incoming shapes.
+                      </p>
+                    </div>
+                  </div>
+
+                  <h3>Augmented Reality Game</h3>
+                  <div class="project-menu">
+                    <ul>
+                      <li class="project-menu-back">
+                        <i class="fa fa-chevron-circle-left"></i>
+                        Back
+                      </li>
+                      <li class="language">
+                        C++
+                      </li>
+                      <li>
+                        <a href="projects/ar_game/AGT_Report.pdf" download><i class="fa fa-download"></i> Download Report (860KB)</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="expanded-content">
+
+                    <div class="row expanded-main">
+
+                      <div class="col-md-12">
+                        <div class="col-md-6">
+                         <h4>Overview</h4>
+                         <p>
+                           <ul>
+                             <li>
+                               Two staged augmented reality game implemented using the Abertay Framework for Sony PSVita.
+                             </li>
+                             <li>
+                               The first stage is a shape-matching puzzle. The player shape is on AR marker 1, the target shape is on AR marker 2.
+                               The player changes their shape by moving the markers. Three transforms are used to determine the players shape.
+                               The type of the players shape is changed by rotating marker 1 - as depicted on the controls image. The shape can be either a sphere or cube.
+                               The scale of the players shape is changed based on the distance between the markers.
+                               The colour of the palyers shape is changed based on the relative angle of marker 2 around marker 1 - visualizable as a colour wheel centered on marker 1. The defined colours are shown on the controls image.<br>
+                               Once the shapes match (same type and colour, reasonably similar scale) the second stage can be entered by pressing Cross, Square or Triangle to select the difficulty level.
+                             </li>
+                             <li>
+                               The second stage is combat where shapes will fire at the player from marker 1.
+                               The player can shoot down these shapes with their own by firing using the shoulders buttons and can move around to avoid incoming shapes by moving the PSVita.
+                               To win, the player must destroy a variable number of enemy shapes depending on the difficulty level. If the player is hit by an incoming shape they lose.
+                             </li>
+                           </ul>
+                         </p>
+                       </div>
+
+                        <div class="col-md-6">
+                          <h4>Download</h4>
+                          <p>
+                            The download contains only the project report. The application is not available due to being implemented on the PSVita.
+                          </p>
+                        </div>
+                      </div>
+
+                       
+
+                       <div class="col-md-4">
+                         <h4>Stage 1 Controls</h4>
+                         <img src="projects/ar_game/controls.png" alt="Controls">
+                       </div>
+
+                       <div class="col-md-4">
+                         <h4>Matched Shapes</h4>
+                         <img src="projects/ar_game/matched.png" alt="Matched Shapes">
+                       </div>
+
+                       <div class="col-md-4">
+                         <h4>Combat Stage</h4>
+                         <img src="projects/ar_game/combat.png" alt="Combat">
+                       </div>
+
+                    </div>
+                    <!-- expanded-main -->
+
+                  </div>
+                  <!-- expanded-content -->
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+              <div class="project-item">
+                <div class="expandable-content">
+                  <img src="projects/space_game/game.png" alt="Space Game">
                   <div class="project-hover">
                     <div class="inside">
                       <h4>Space Game</h4>
@@ -475,20 +569,49 @@
                   <div class="expanded-content">
 
                     <div class="row expanded-main">
-
-                      <div class="col-md-6">
-                        <h4>Overview</h4>
-                        <p>
-                          <ul>
-                            <li>
-
-                            </li>
-                          </ul>
-                        </p>
+                      
+                      <div class="col-md-12 col-lg-6">
+                        <div class="col-md-6 col-lg-12">
+                          <h4>Overview</h4>
+                          <p>
+                            <ul>
+                              <li>
+                                Infinite side scrolling space game where the player must avoid or destroy oncoming asteroids and enemy spaceships.
+                              </li>
+                              <li>
+                                Score is awarded for destroying asteroids or enemies - the player has a cannon and photon weapon to destroy enemies with.
+                              </li>
+                              <li>
+                                The game acts as a server and sends messages to any connected spectator clients.
+                                Spectator clients recieve messages for all input and events (such as enemy spawns) and reproduce the game deterministically.
+                                TCP protocol is used and messages are executed on a frame basis (not time) delayed by a few hundred frames so that the spectator clients have a large buffer to catch up after packet loss.
+                              </li>
+                            </ul>
+                          </p>
+                        </div>
+                      
+                        <div class="col-md-6 col-lg-12">
+                          <h4>Download</h4>
+                          <p>
+                            The download contains three main items (not including readme):
+                            <ul>
+                              <li>
+                                Server executable - this is the playable game executable.
+                              </li>
+                              <li>
+                                Client executable - will automatically connect to server (local machine only) to recieve game-state messages.
+                              </li>
+                              <li>
+                                Project presentation - a short presentation about the networking features of the applications.
+                              </li>
+                            </ul>
+                            There are several known issues for the application, explained in the readme.
+                          </p>
+                       </div>
                       </div>
 
-                      <div class="col-md-6">
-                        <img src="img/pathfinding.png" alt="Pathfinding">
+                      <div class="col-md-12 col-lg-6">
+                        <img src="projects/space_game/spectator_client.png" alt="Spectator Client">
                       </div>
 
                     </div>

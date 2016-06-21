@@ -272,6 +272,12 @@ hr {
 
 /*------ projects ------ */
 
+.alert {
+  color: #ccc;
+  background-color: #111;
+  border-color: #FF9900;
+}
+
 .projects-holder {
   margin-top: 20px;
   padding: 0 40px;
