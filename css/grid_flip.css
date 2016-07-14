@@ -15,7 +15,7 @@
   left: 0;
   height: calc(100vh - 150px);
   margin: auto;
-  overflow: auto;
+  overflow: auto !important;
   z-index: 5;
   background: #1e1e1e;
   border-bottom: 4px solid #FF9900;
