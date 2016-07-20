@@ -85,3 +85,8 @@ var _loop = function () {
 for (var i = 0; i < elements.length; i++) {
   _loop();
 }
+
+// Stops links on unopened project-menu from opening the grid when clicked
+$('.project-menu a').click(function(e) {
+  e.stopPropagation();
+});
