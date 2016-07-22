@@ -1,6 +1,6 @@
 var $contactForm = $('#contact_form');
 $(document).ready(function() {
-    $contactForm.submit(function(e) {
+    $('.submit').click(function(e) {
         e.preventDefault();
         $.ajax({
             url: '//formspree.io/craigjeffrey3@gmail.com',
@@ -24,6 +24,5 @@ $(document).ready(function() {
                 }, 5000);
             }
         });
-        return false;
     });
 });
