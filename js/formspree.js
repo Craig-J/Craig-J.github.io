@@ -6,7 +6,7 @@ $(document).ready(function() {
         var defaultSubmitText = $submit.val();
 
         $.ajax({
-            url: 'https://formspree.io/craigjeffrey3@gmail.com',
+            url: '//formspree.io/craigjeffrey3@gmail.com',
             method: 'POST',
             data: $(this).serialize(),
             dataType: 'json',
