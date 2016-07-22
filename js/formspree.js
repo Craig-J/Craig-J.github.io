@@ -1,11 +1,11 @@
+var $contactForm = $('#contact_form');
 $(document).ready(function() {
-    $('#contact_form').validate({
-        messages: { },
-        submitHandler: function(form) {
+    $contactForm.submit(function(e) {
+        e.preventDefault();
         $.ajax({
             url: '//formspree.io/craigjeffrey3@gmail.com',
             method: 'POST',
-            data: $(form).serialize(),
+            data: $(this).serialize(),
             dataType: 'json',
             beforeSend: function() {
                 $contactForm.append('<div class="alert alert--loading">Sending message…</div>');
@@ -24,5 +24,6 @@ $(document).ready(function() {
                 }, 5000);
             }
         });
-    })
+        return false;
+    });
 });
