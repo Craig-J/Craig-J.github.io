@@ -13,23 +13,17 @@
   <meta name="thumbnail" content="img/avatar.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!--
-    	Created from the Volton Template
-    	http://www.templatemo.com/preview/templatemo_441_volton
-        -->
-
   <link href='https://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/external/normalize.css">
-  <link rel="stylesheet" href="css/external/bootstrap.min.css">
-  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/grid_flip.css">
 
   <script src="https://use.fontawesome.com/4ce13a966f.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src='https://cdn.rawgit.com/GoogleChrome/flipjs/master/dist/flip.js'></script>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdn.rawgit.com/GoogleChrome/flipjs/master/dist/flip.js"></script>
+  <script src="js/formspree.js"></script>
 </head>
 
 <body>
@@ -40,7 +34,7 @@
         <img src="img/avatar.png" alt="C Avatar">
       </div>
       <div class="profile-info">
-        <h4 class="profile-title">Craig <span style="color:#FF9900">Jeffrey</span></h4>
+        <h4 class="profile-title">Craig Jeffrey</h4>
         <p class="profile-description">Programmer/Game Developer</p>
         <div class="profile-icons">
           <ul>
@@ -62,16 +56,16 @@
   <div class="navigation-menu">
     <ul>
       <li>
-        <a href="#"><i class="fa fa-home"></i></a>
+        <a href="#about"><i class="fa fa-user fa-fw"></i> About</a>
       </li>
       <li>
-        <a href="#about">About</a>
+        <a href="#projects"><i class="fa fa-th fa-fw"></i> Projects</a>
       </li>
       <li>
-        <a href="#projects">Projects</a>
+        <a href="#cv"><i class="fa fa-file-pdf-o fa-fw"></i> Curriculum Vit&aelig</a>
       </li>
       <li>
-        <a href="#cv"><i class="fa fa-file-pdf-o"></i> Curriculum Vit&aelig</a>
+        <a href="#contact"><i class="fa fa-comment fa-fw"></i> Contact</a>
       </li>
   </div>
 
@@ -103,8 +97,19 @@
                   <h4>Skills</h4>
                   <h5>Programming</h5>
                   <ul class="languages">
+                    <li class="competent">
+                      Competent
+                    </li>
                     <li class="cpp">
-                      <a href="http://en.cppreference.com/w/cpp">C++</a>
+                      <a href="http://en.cppreference.com/w/cpp"><img class="c-icon" src="img/avatar.png">++</a>
+                    </li>
+                  </ul>
+                  C++ is the language I am most proficient using (4 years experience). I have experience using most standard library features including containers,
+                  algorithms, iterators, strings, I/O, multi-threading and filesystem (boost, standard in C++17) as well as a number of other libraries/APIs (<a href="#cv">see CV</a>). I also have experience
+                  using advanced features such as inheritance and templates.
+                  <ul class="languages">
+                    <li class="basic">
+                      Basic
                     </li>
                     <li>
                       C#
@@ -128,9 +133,7 @@
                       MATLAB
                     </li>
                   </ul>
-                  C++ is the language I am most proficient using (4 years experience). I have experience using most standard library features including containers,
-                  algorithms, iterators, strings, I/O, multi-threading and filesystem (boost, standard in C++17) as well as a number of other libraries/APIs (see CV). I also have experience
-                  using advanced features such as inheritance and templates. I have basic experience in all other languages listed.
+                  I have more experience with some of these than others but would require brushing up in most to produce good work.
 
                   <h5>Miscellaneous Skills</h5>
                   <ul>
@@ -144,27 +147,6 @@
                       LaTeX document editing with TeXstudio.
                   </ul>
                 </div>
-
-                <!--
-                <div class="col-md-4">
-                  <h4>Traits</h4>
-                  <p>
-                    I have several distinguishing traits which can be considered both strengths and weaknesses.
-                    <ul>
-                      <li>
-                        <h5>Perfectionist</h5>
-                        I am always seeking to improve and find the best/most efficient way to do things. I usually end up with high quality solutions
-                        to problems but spend more time researching/analysing before reaching the solution.
-                      </li>
-                      <li>
-                        <h5>Open minded and honest</h5>
-                        Everybody has something to teach - there is always somebody better at any particular thing. The flip side of being impartial
-                        is that I am always self-doubting since there is usually a better possible solution for any given
-                        problem.
-                      </li>
-                    </ul>
-                  </p>
-                </div>-->
 
                 <div class="col-md-6">
 
@@ -925,6 +907,58 @@
 
           </div>
           <!-- .projects-holder -->
+        </div>
+
+        <!-- CONTACT -->
+        <div class="page-section" id="contact">
+
+          <form class="form-horizontal" id="contact_form" action="https://formspree.io/craigjeffrey3@gmail.com" method="POST" >
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 col-sm-3 control-label">Name</label>
+                <div class="col-md-4 col-sm-6 inputGroupContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user fa-fw"></i></span>
+                    <input name="name" placeholder="Name" class="form-control" type="text" required>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Text input-->
+              <div class="form-group">
+                <label class="col-md-4 col-sm-3 control-label">E-Mail</label>
+                <div class="col-md-4 col-sm-6 inputGroupContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-envelope fa-fw"></i></span>
+                    <input name="_replyto" placeholder="E-Mail Address" class="form-control" type="email" required>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Text area -->
+              <div class="form-group">
+                <label class="col-md-4 col-sm-3 control-label">Message</label>
+                <div class="col-md-4 col-sm-6 inputGroupContainer">
+                  <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-comment fa-fw"></i></span>
+                    <textarea class="form-control" name="message" placeholder="Your message" required></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <input style="display:none;" type="text" name="_gotcha">
+	            <input type="hidden" name="_subject" value="Website Contact">
+
+              <!-- Button -->
+              <div class="form-group">
+                <label class="col-md-4 col-sm-3 control-label"></label>
+                <div class="col-md-4 col-sm-6">
+                  <input type="submit" value="Send" class="submit btn btn-warning">
+                </div>
+              </div>
+
+          </form>
         </div>
 
         <!-- CV -->

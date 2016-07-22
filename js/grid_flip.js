@@ -1,14 +1,14 @@
-// We animate the content of the tiles/cells, not the tiles themselves. They are not absolutelty positioned and so animating them would cause layout changes, this would look strange and hurt performance.
+// We animate the content of the tiles/cells, not the tiles themselves. They are not absolutely positioned and so animating them would cause layout changes, this would look strange and hurt performance.
 'use strict';
 
 var elements = document.querySelectorAll('.expandable-content');
 var back_buttons = document.querySelectorAll('.project-menu-back');
 var expandedClass = 'expanded';
 
-    // Scroll disabling script
-    var $body = $('body'),
-        scrollDisabled = false,
-        scrollTop;
+// Scroll disabling script
+var $body = $('body'),
+    scrollDisabled = false,
+    scrollTop;
 
 // Standard FLIP
 // https://aerotwist.com/blog/flip-your-animations/#the-general-approach
