@@ -8,21 +8,17 @@
 }
 
 .expanded {
-  position: fixed;
-  top: 150px;
-  right: 0;
-  bottom: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
   left: 0;
-  height: calc(100vh - 150px);
+  top: 0;
   margin: auto;
-  overflow: auto !important;
+  overflow: visible !important;
   z-index: 5;
   background: #1e1e1e;
-  border-bottom: 4px solid #FF9900;
-}
-
-.expandable-content {
-  overflow: hidden;
+  box-shadow: 0 0 20px 4px #ff9900 inset;
+  cursor: default;
 }
 
 .expandable-content h3 {

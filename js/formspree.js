@@ -5,7 +5,7 @@ $(document).ready(function() {
         $.ajax({
             url: '//formspree.io/craigjeffrey3@gmail.com',
             method: 'POST',
-            data: $(this).serialize(),
+            data: $contactForm.serialize(),
             dataType: 'json',
             beforeSend: function() {
                 $contactForm.append('<div class="alert alert--loading">Sending message…</div>');

@@ -17,20 +17,6 @@ function expand(flip) {
   flip.last(expandedClass);
   flip.invert();
   flip.play();
-
-      // Scroll disabling script
-      if (scrollDisabled)
-      {
-        return;
-      }
-      scrollTop = $(window).scrollTop();
-
-      $body.addClass('noscroll')
-      .css({
-      top: -1 * scrollTop
-      });
-
-      scrollDisabled = true;
 }
 
 
@@ -44,17 +30,6 @@ function contract(flip) {
   flip.last();
   flip.invert();
   flip.play();
-
-      // Scroll disabling script
-      if (!scrollDisabled)
-      {
-        return;
-      }
-
-      $body.removeClass('noscroll');
-      $(window).scrollTop(scrollTop);
-
-      scrollDisabled = false;
 }
 
 // Event subscription
@@ -70,6 +45,22 @@ var _loop = function () {
   element.addEventListener('click', function () {
     if (!element.classList.contains(expandedClass)) {
       expand(flip);
+
+      $("html, body").animate({ scrollTop: $('.main-content').offset().top - 50 }, "slow");
+
+      // Scroll disabling script
+      /*if (scrollDisabled)
+      {
+        return;
+      }
+      scrollTop = $(window).scrollTop();
+
+      $body.addClass('noscroll')
+      .css({
+      top: -1 * scrollTop
+      });
+
+      scrollDisabled = true;*/
     }
   });
 
@@ -77,6 +68,17 @@ var _loop = function () {
     if (element.classList.contains(expandedClass)) {
       contract(flip);
       event.stopPropagation();
+
+      // Scroll disabling script
+      /*if (!scrollDisabled)
+      {
+        return;
+      }
+
+      $body.removeClass('noscroll');
+      $(window).scrollTop(scrollTop);
+
+      scrollDisabled = false;*/
     }
   });
     
@@ -90,3 +92,20 @@ for (var i = 0; i < elements.length; i++) {
 $('.project-menu a').click(function(e) {
   e.stopPropagation();
 });
+
+$('html').click(function(){
+  $(this).removeClass('start');
+})
+
+$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash;
+	    var $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 0, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});

@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7 start"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8 start"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 start"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js start"> <!--<![endif]-->
 
 <head>
   <meta charset="utf-8">
@@ -24,35 +24,25 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="https://cdn.rawgit.com/GoogleChrome/flipjs/master/dist/flip.js"></script>
   <script src="js/formspree.js"></script>
+  <script src="js/RhythMIR_download.js"></script>
 </head>
 
 <body>
-  <!-- PROFILE BAR -->
-  <div class="profile-bar">
+
+  <header>
+    
+  <!-- PROFILE -->
     <div class="profile-section">
-      <div class="profile-image">
+      <div class="avatar">
         <img src="img/avatar.png" alt="C Avatar">
       </div>
       <div class="profile-info">
         <h4 class="profile-title">Craig Jeffrey</h4>
-        <p class="profile-description">Programmer/Game Developer</p>
-        <div class="profile-icons">
-          <ul>
-            <li>
-              <a href="mailto:craigjeffrey3@gmail.com"><i class="fa fa-envelope"></i> craigjeffrey3@gmail.com</a>
-            </li>
-            <li>
-              <a href="https://github.com/Craig-J"><i class="fa fa-github"></i> GitHub</a>
-              <a href="https://uk.linkedin.com/in/craig-jeffrey-42765990">Linked<i class="fa fa-linkedin-square"></i></a>
-            </li>
-          </ul>
-        </div>
+        <p class="profile-description">Graduate Programmer and Game Developer</p>
       </div>
     </div>
-    <!-- profile-section -->
-  </div>
 
-  <!-- NAVIGATION -->
+    <!-- NAVIGATION -->
   <div class="navigation-menu">
     <ul>
       <li>
@@ -67,7 +57,16 @@
       <li>
         <a href="#contact"><i class="fa fa-comment fa-fw"></i> Contact</a>
       </li>
+      <li>
+        <a href="https://github.com/Craig-J" target="_blank"><i class="fa fa-github"></i> GitHub</a>
+      </li>
+      <li>
+        <a href="https://uk.linkedin.com/in/craig-jeffrey-42765990" target="_blank">Linked<i class="fa fa-linkedin-square"></i></a>
+      </li>
   </div>
+  </header>
+
+  
 
   <!-- MAIN CONTENT -->
   <div class="main-content">
@@ -194,8 +193,7 @@
           <div class="row projects-holder">
 
             <div class="col-md-12 col-lg-6">
-              <div class="project-item">
-                <div class="expandable-content">
+                <div class="project-item expandable-content">
 
                   <img src="projects/RhythMIR/gameplay.png" alt="RhythMIR">
                   <div class="project-hover">
@@ -224,7 +222,7 @@
                         <a href="https://github.com/Craig-J/RhythMIR" target="_blank"><i class="fa fa-github"></i> GitHub</a>
                       </li>
                       <li>
-                        <a href="https://github.com/Craig-J/RhythMIR/releases/latest" target="_blank"><i class="fa fa-download"></i> Latest Release</a>
+                        <a class="rhythmir_download" href="https://github.com/Craig-J/RhythMIR/releases/latest" target="_blank"><i class="fa fa-download"></i> Download</a>
                       </li>
                     </ul>
                   </div>
@@ -261,12 +259,10 @@
                   <!-- expanded-content -->
 
                 </div>
-              </div>
             </div>
 
             <div class="col-md-12 col-lg-6">
-              <div class="project-item">
-                <div class="expandable-content">
+                <div class="project-item expandable-content">
 
                   <img src="projects/galaxea/Galaxea.png" alt="Galaxea">
                   <div class="project-hover">
@@ -361,12 +357,12 @@
                   <!-- expanded-content -->
 
                 </div>
-              </div>
             </div>
 
+            <div class="clearfix visible-lg-block"></div>
+
             <div class="col-md-6 col-lg-4">
-              <div class="project-item">
-                <div class="expandable-content">
+                <div class="project-item expandable-content">
                   <img src="projects/pathfinding/pathfinding.png" alt="Pathfinding">
                   <div class="project-hover">
                     <div class="inside">
@@ -458,12 +454,10 @@
                   <!-- expanded-content -->
 
                 </div>
-              </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
-              <div class="project-item">
-                <div class="expandable-content">
+                <div class="project-item expandable-content">
                   <img src="projects/ar_game/splash.png" alt="AR Game">
                   <div class="project-hover">
                     <div class="inside">
@@ -551,12 +545,10 @@
                   <!-- expanded-content -->
 
                 </div>
-              </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
-              <div class="project-item">
-                <div class="expandable-content">
+                <div class="project-item expandable-content">
                   <img src="projects/space_game/game.png" alt="Space Game">
                   <div class="project-hover">
                     <div class="inside">
@@ -639,12 +631,12 @@
                   <!-- expanded-content -->
 
                 </div>
-              </div>
             </div>
 
+            <div class="clearfix visible-lg-block"></div>
+
             <div class="col-md-6 col-lg-4">
-              <div class="project-item">
-                <div class="expandable-content">
+                <div class="project-item expandable-content">
                   <img src="projects/ai_car/ai_car.png" alt="AI Car">
                   <div class="project-hover">
                     <div class="inside">
@@ -709,12 +701,10 @@
                   <!-- expanded-content -->
 
                 </div>
-              </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
-              <div class="project-item">
-                <div class="expandable-content">
+                <div class="project-item expandable-content">
                   <img src="projects/gas_giant/gas_giant_normal.jpg" alt="Gas Giant">
                   <div class="project-hover">
                     <div class="inside">
@@ -796,12 +786,10 @@
                   <!-- expanded-content -->
 
                 </div>
-              </div>
             </div>
 
             <div class="col-md-6 col-lg-4">
-              <div class="project-item">
-                <div class="expandable-content">
+                <div class="project-item expandable-content">
 
                   <img src="projects/space_scene/blue_galaxy.jpg" alt="Space Scene">
                   <div class="project-hover">
@@ -876,7 +864,6 @@
                   <!-- expanded-content -->
 
                 </div>
-              </div>
             </div>
 
             <!--<div class="col-md-6 col-lg-4">
@@ -954,7 +941,7 @@
               <div class="form-group">
                 <label class="col-md-4 col-sm-3 control-label"></label>
                 <div class="col-md-4 col-sm-6">
-                  <input type="submit" value="Send" class="submit btn btn-warning">
+                    <button type="submit" class="submit btn btn-warning">Send Message <i class="fa fa-paper-plane fa-fw"></i></button>
                 </div>
               </div>
 
@@ -963,9 +950,10 @@
 
         <!-- CV -->
         <div class="page-section" id="cv">
+          <a href="CV.pdf"><i class="fa fa-file-pdf-o"></i> Download Cirriculum Vit&aelig (109KB)</a>
           <div class="cv-container">
             <object data="CV.pdf" type="application/pdf">
-                  Your browser does not support embedding the PDF. View <a href="CV.pdf">here</a>.
+                  Your browser does not support embedding the PDF. Use the download link.
               </object>
           </div>
         </div>
