@@ -1,8 +1,8 @@
 ﻿<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7 start"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8 start"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9 start"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js start"> <!--<![endif]-->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7 intro"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8 intro"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9 intro"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js intro"> <!--<![endif]-->
 
 <head>
   <meta charset="utf-8">
@@ -25,51 +25,63 @@
   <script src="https://cdn.rawgit.com/GoogleChrome/flipjs/master/dist/flip.js"></script>
   <script src="js/formspree.js"></script>
   <script src="js/RhythMIR_download.js"></script>
+  <script src="js/main.js"></script>
 </head>
 
 <body>
 
   <header>
-    
-  <!-- PROFILE -->
-    <div class="profile-section">
-      <div class="avatar">
-        <img src="img/avatar.png" alt="C Avatar">
+
+    <!-- PROFILE -->
+    <div class="intro-section intro">
+      <div class="profile-section">
+        <div class="avatar">
+          <img src="img/avatar.png" alt="C Avatar">
+        </div>
+        <div class="profile-info">
+          <h4 class="profile-title">Craig Jeffrey</h4>
+          <p class="profile-description">
+            Graduate Programmer<br>
+            Game Developer
+          </p>
+        </div>
       </div>
-      <div class="profile-info">
-        <h4 class="profile-title">Craig Jeffrey</h4>
-        <p class="profile-description">Graduate Programmer and Game Developer</p>
+
+      <div class="intro-notice intro">
+      <h3>
+        Welcome!
+      </h3>
+
+      <button class="intro-button btn btn-style">Enter Website <i class="fa fa-sign-in fa-fw"></i></button>
       </div>
     </div>
 
     <!-- NAVIGATION -->
-  <div class="navigation-menu">
-    <ul>
-      <li>
-        <a href="#about"><i class="fa fa-user fa-fw"></i> About</a>
-      </li>
-      <li>
-        <a href="#projects"><i class="fa fa-th fa-fw"></i> Projects</a>
-      </li>
-      <li>
-        <a href="#cv"><i class="fa fa-file-pdf-o fa-fw"></i> Curriculum Vit&aelig</a>
-      </li>
-      <li>
-        <a href="#contact"><i class="fa fa-comment fa-fw"></i> Contact</a>
-      </li>
-      <li>
-        <a href="https://github.com/Craig-J" target="_blank"><i class="fa fa-github"></i> GitHub</a>
-      </li>
-      <li>
-        <a href="https://uk.linkedin.com/in/craig-jeffrey-42765990" target="_blank">Linked<i class="fa fa-linkedin-square"></i></a>
-      </li>
-  </div>
+    <div class="navigation-menu intro">
+      <ul>
+        <li>
+          <a href="#about"><i class="fa fa-user fa-fw"></i> About</a>
+        </li>
+        <li>
+          <a href="#projects"><i class="fa fa-th fa-fw"></i> Projects</a>
+        </li>
+        <li>
+          <a href="#cv"><i class="fa fa-file-pdf-o fa-fw"></i> Curriculum Vit&aelig</a>
+        </li>
+        <li>
+          <a href="#contact"><i class="fa fa-comment fa-fw"></i> Contact</a>
+        </li>
+        <li>
+          <a href="https://github.com/Craig-J" target="_blank"><i class="fa fa-github fa-fw"></i> GitHub</a>
+        </li>
+        <li>
+          <a href="https://uk.linkedin.com/in/craig-jeffrey-42765990" target="_blank">Linked<i class="fa fa-linkedin-square fa-fw"></i></a>
+        </li>
+    </div>
   </header>
 
-  
-
   <!-- MAIN CONTENT -->
-  <div class="main-content">
+  <div class="main-content intro">
 
     <div class="container-fluid">
 
@@ -77,118 +89,115 @@
 
         <!-- ABOUT -->
         <div class="page-section" id="about">
+          
           <div class="row">
+            
             <div class="col-md-12">
-              <h2>About Me</h2>
-            </div>
-            <div class="col-sm-6 col-md-3 about-picture">
-              <img src="img/profile.jpg" alt="Profile Picture">
-            </div>
-            <div class="col-md-9">
+              <h3>About Me</h3>
               <p>
                 Scottish C++ programmer and game developer. I am looking for a software development job (any, not just game dev) to refine my skills and potentially learn new ones.
                 I am open minded, honest and a perfectionist. I am passionate about improving my abilities and gaming.
                 Recently graduated, achieving Upper Second Class (2:1) in the <a href="http://www.abertay.ac.uk/studying/ug/comopgamestech/">Computer Games Technology</a> course at <a href="http://www.abertay.ac.uk/">University of Abertay Dundee</a>.                
               </p>
-              <div class="row">
-
-                <div class="col-md-6">
-                  <h4>Skills</h4>
-                  <h5>Programming</h5>
-                  <ul class="languages">
-                    <li class="competent">
-                      Competent
-                    </li>
-                    <li class="cpp">
-                      <a href="http://en.cppreference.com/w/cpp"><img class="c-icon" src="img/avatar.png">++</a>
-                    </li>
-                  </ul>
-                  C++ is the language I am most proficient using (4 years experience). I have experience using most standard library features including containers,
-                  algorithms, iterators, strings, I/O, multi-threading and filesystem (boost, standard in C++17) as well as a number of other libraries/APIs (<a href="#cv">see CV</a>). I also have experience
-                  using advanced features such as inheritance and templates.
-                  <ul class="languages">
-                    <li class="basic">
-                      Basic
-                    </li>
-                    <li>
-                      C#
-                    </li>
-                    <li>
-                      Python
-                    </li>
-                    <li>
-                      HTML
-                    </li>
-                    <li>
-                      CSS
-                    </li>
-                    <li>
-                      JavaScript
-                    </li>
-                    <li>
-                      HLSL
-                    </li>
-                    <li>
-                      MATLAB
-                    </li>
-                  </ul>
-                  I have more experience with some of these than others but would require brushing up in most to produce good work.
-
-                  <h5>Miscellaneous Skills</h5>
-                  <ul>
-                    <li>
-                      UI and image editing experience gained from customizing UIs for games I play and GUI development for my projects.
-                    </li>
-                    <li>
-                      3D rigging/skinning experience using Autodesk Maya.
-                    </li>
-                    <li>
-                      LaTeX document editing with TeXstudio.
-                  </ul>
-                </div>
-
-                <div class="col-md-6">
-
-                  <h4>Interests</h4>
-
-                  <h5>Programming</h5>
-                  <p>
-                    My favorite programming activities are debugging interesting problems, refactoring and doing software architecture. I don't have a specialization when it comes to my abilities yet however I find UI, Audio and Network programming interesting so I suspect I will specialize in one of these areas.
-                  </p>
-
-                  <h5>Gaming</h5>
-                  <p>
-                    I prefer competitive games and games that involve mastering a skill. I am particularly a fan of rhythm games and dislike games
-                    with random elements such as card games. I currently play <a href="https://osu.ppy.sh/">osu!</a>,
-                    <a href="http://euw.leagueoflegends.com/">League of Legends</a> and <a href="https://playoverwatch.com/">Overwatch</a>.
-                  </p>
-
-                  <h5>Computer Hardware/Peripherals</h5>
-                  <p>
-                    I am interested in high end hardware and peripherals such as mechanical keyboards and headphones. I own two mechanics keyboards, a CoolerMaster NovaTouch TKL (Topre) and Corsair K70 Rapidfire (MX Speed); two pairs of headphones, JVC SZ-2000s and Massdrop AKG K7XX's; and a FiiO E12 amplifier.
-                  </p>
-
-                </div>
-
-              </div>
             </div>
 
+            <div class="col-md-6">
+              <h4>Skills</h4>
+              <h5>Programming</h5>
+              <ul class="languages">
+                <li class="competent">
+                  Competent
+                </li>
+                <li class="cpp">
+                  <a href="http://en.cppreference.com/w/cpp"><img class="c-icon" src="img/avatar.png">++</a>
+                </li>
+              </ul>
+              C++ is the language I am most proficient using (4 years experience). I have experience using most standard library features including containers,
+              algorithms, iterators, strings, I/O, multi-threading and filesystem (boost, standard in C++17) as well as a number of other libraries/APIs (<a href="#cv">see CV</a>). I also have experience
+              using advanced features such as inheritance and templates.
+              <ul class="languages">
+                <li class="basic">
+                  Basic
+                </li>
+                <li>
+                  C#
+                </li>
+                <li>
+                  Python
+                </li>
+                <li>
+                  HTML
+                </li>
+                <li>
+                  CSS
+                </li>
+                <li>
+                  JavaScript
+                </li>
+                <li>
+                  HLSL
+                </li>
+                <li>
+                  MATLAB
+                </li>
+              </ul>
+              I have more experience with some of these than others but would require brushing up in most to produce good work.
+
+              <h5>Miscellaneous Skills</h5>
+              <ul>
+                <li>
+                  UI and image editing experience gained from customizing UIs for games I play and GUI development for my projects.
+                </li>
+                <li>
+                  3D rigging/skinning experience using Autodesk Maya.
+                </li>
+                <li>
+                  LaTeX document editing with TeXstudio.
+              </ul>
+            </div>
+
+            <div class="col-md-6">
+
+              <h4>Interests</h4>
+
+              <h5>Programming</h5>
+              <p>
+                My favorite programming activities are debugging interesting problems, refactoring and doing software architecture. I don't have a specialization when it comes to my abilities yet however I find UI, Audio and Network programming interesting so I suspect I will specialize in one of these areas.
+              </p>
+
+              <h5>Gaming</h5>
+              <p>
+                I prefer competitive games and games that involve mastering a skill. I am particularly a fan of rhythm games and dislike games
+                with random elements such as card games. I currently play <a href="https://osu.ppy.sh/">osu!</a>,
+                <a href="http://euw.leagueoflegends.com/">League of Legends</a> and <a href="https://playoverwatch.com/">Overwatch</a>.
+              </p>
+
+              <h5>Computer Hardware/Peripherals</h5>
+              <p>
+                I am interested in high end hardware and peripherals such as mechanical keyboards and headphones. I own two mechanics keyboards, a CoolerMaster NovaTouch TKL (Topre) and Corsair K70 Rapidfire (MX Speed); two pairs of headphones, JVC SZ-2000s and Massdrop AKG K7XX's; and a FiiO E12 amplifier.
+              </p>
+
+            </div>
           </div>
-          <!-- #about -->
+
         </div>
+        <!-- #about -->
 
         <!-- PROJECTS -->
         <div class="page-section" id="projects">
-          <h2>Portfolio</h2>
-          <p class="center">
-            Below are descriptions of the most notable projects I have worked on. Hover over a tile for a brief description. Click/tap
-            a tile to expand content.
-          </p>
-          <h3>Executable Prerequisites</h3>
-          <p class="center">
-            Running downloaded executables will require <a href="https://www.microsoft.com/en-gb/download/details.aspx?id=48145">VS2015 C++ Redistributable</a>.
-            For RhythMIR, the <a href="https://www.openal.org/downloads/">OpenAL Windows Installer</a> is also required.
-          </p>
+
+          <div class="row">
+            <h3>Portfolio</h3>
+            <p class="center">
+              Below are descriptions of the most notable projects I have worked on. Hover over a tile for a brief description. Click/tap
+              a tile to expand content.
+            </p>
+            <h4 class="center">Executable Prerequisites</h4>
+            <p class="center">
+              Running downloaded executables will require <a href="https://www.microsoft.com/en-gb/download/details.aspx?id=48145">VS2015 C++ Redistributable</a>.
+              For RhythMIR, the <a href="https://www.openal.org/downloads/">OpenAL Windows Installer</a> is also required.
+            </p>
+          </div>
 
           <div class="row projects-holder">
 
@@ -208,12 +217,26 @@
 
                   <h3>RhythMIR</h3>
                   <div class="project-menu">
-                    <ul>
-                      <li class="project-menu-back">
-                        Back
+                    <ul class="project-tags">
+                      <li class="platform">
+                         Windows
                       </li>
                       <li class="language">
                         C++
+                      </li>
+                      <li>
+                        2D Graphics
+                      </li>
+                      <li>
+                        Audio
+                      </li>
+                      <li>
+                        GUI
+                      </li>
+                    </ul>
+                    <ul>
+                      <li class="project-menu-back">
+                        Back
                       </li>
                       <li>
                         <a href="RhythMIR"><i class="fa fa-external-link"></i> Project Website</a>
@@ -277,13 +300,24 @@
 
                   <h3>Galaxea - Group Project</h3>
                   <div class="project-menu">
+                    <ul class="project-tags">
+                      <li class="platform">
+                         PSVita
+                      </li>
+                      <li class="language">
+                        C++
+                      </li>
+                      <li>
+                        2D Graphics
+                      </li>
+                      <li>
+                        UI
+                      </li>
+                    </ul>
                     <ul>
                       <li class="project-menu-back">
                         <i class="fa fa-chevron-circle-left"></i>
                         Back
-                      </li>
-                      <li class="language">
-                        C++
                       </li>
                     </ul>
                   </div>
@@ -375,13 +409,21 @@
 
                   <h3>Concurrent A* Pathfinding</h3>
                   <div class="project-menu">
+                    <ul class="project-tags">
+                      <li class="platform">
+                         Windows
+                      </li>
+                      <li class="language">
+                        C++
+                      </li>
+                      <li>
+                        Concurrency
+                      </li>
+                    </ul>
                     <ul>
                       <li class="project-menu-back">
                         <i class="fa fa-chevron-circle-left"></i>
                         Back
-                      </li>
-                      <li class="language">
-                        C++
                       </li>
                       <li>
                         <a href="projects/pathfinding/Concurrent_Pathfinding.zip" download><i class="fa fa-download"></i> Download .zip (232KB)</a>
@@ -470,13 +512,21 @@
 
                   <h3>Augmented Reality Game</h3>
                   <div class="project-menu">
+                    <ul class="project-tags">
+                      <li class="platform">
+                         PSVita
+                      </li>
+                      <li class="language">
+                        C++
+                      </li>
+                      <li>
+                        3D Graphics
+                      </li>
+                    </ul>
                     <ul>
                       <li class="project-menu-back">
                         <i class="fa fa-chevron-circle-left"></i>
                         Back
-                      </li>
-                      <li class="language">
-                        C++
                       </li>
                       <li>
                         <a href="projects/ar_game/AGT_Report.pdf" download><i class="fa fa-download"></i> Download Report (860KB)</a>
@@ -562,13 +612,24 @@
 
                   <h3>Networked Space Game</h3>
                   <div class="project-menu">
+                    <ul class="project-tags">
+                      <li class="platform">
+                         Windows/PSVita
+                      </li>
+                      <li class="language">
+                        C++
+                      </li>
+                      <li>
+                        2D Graphics
+                      </li>
+                      <li>
+                        Networking
+                      </li>
+                    </ul>
                     <ul>
                       <li class="project-menu-back">
                         <i class="fa fa-chevron-circle-left"></i>
                         Back
-                      </li>
-                      <li class="language">
-                        C++
                       </li>
                       <li>
                         <a href="projects/space_game/Space_Game.zip" download><i class="fa fa-download"></i> Download .zip (4.88MB)</a>
@@ -650,13 +711,24 @@
 
                   <h3>AI Car Steering</h3>
                   <div class="project-menu">
+                    <ul class="project-tags">
+                      <li class="platform">
+                         Windows
+                      </li>
+                      <li class="language">
+                        C++
+                      </li>
+                      <li>
+                        2D Graphics
+                      </li>
+                      <li>
+                        AI
+                      </li>
+                    </ul>
                     <ul>
                       <li class="project-menu-back">
                         <i class="fa fa-chevron-circle-left"></i>
                         Back
-                      </li>
-                      <li class="language">
-                        C++
                       </li>
                       <li>
                         <a href="projects/ai_car/AI_Car.zip" download><i class="fa fa-download"></i> Download .zip (2.03MB)</a>
@@ -716,15 +788,23 @@
                     </div>
                   </div>
 
-                  <h3>Gas Giant</h3>
+                  <h3>Procedural Gas Giant</h3>
                   <div class="project-menu">
+                    <ul class="project-tags">
+                      <li class="platform">
+                         Windows
+                      </li>
+                      <li class="language">
+                        C++/HLSL
+                      </li>
+                      <li>
+                        3D Graphics
+                      </li>
+                    </ul>
                     <ul>
                       <li class="project-menu-back">
                         <i class="fa fa-chevron-circle-left"></i>
                         Back
-                      </li>
-                      <li class="language">
-                        C++
                       </li>
                       <li>
                         <a href="projects/gas_giant/ProceduralMethodsReport.pdf" download><i class="fa fa-download"></i> Download Report (6.18MB)</a>
@@ -803,13 +883,21 @@
 
                   <h3>Space Scene</h3>
                   <div class="project-menu">
+                    <ul class="project-tags">
+                      <li class="platform">
+                         Windows
+                      </li>
+                      <li class="language">
+                        C++ Windows
+                      </li>
+                      <li>
+                        3D Graphics
+                      </li>
+                    </ul>
                     <ul>
                       <li class="project-menu-back">
                         <i class="fa fa-chevron-circle-left"></i>
                         Back
-                      </li>
-                      <li class="language">
-                        C++
                       </li>
                       <li>
                         <a href="projects/space_scene/Space_Scene.zip" download><i class="fa fa-download"></i> Download .zip (27.4MB)</a>
@@ -898,7 +986,8 @@
 
         <!-- CONTACT -->
         <div class="page-section" id="contact">
-
+          
+          <h3>Contact Me</h3>
           <form class="form-horizontal" id="contact_form" method="POST" action="//formspree.io/craigjeffrey3@gmail.com">
 
               <!-- Text input-->
@@ -941,7 +1030,7 @@
               <div class="form-group">
                 <label class="col-md-4 col-sm-3 control-label"></label>
                 <div class="col-md-4 col-sm-6">
-                    <button type="submit" class="submit btn btn-warning">Send Message <i class="fa fa-paper-plane fa-fw"></i></button>
+                    <button type="submit" class="submit btn btn-style">Send Message <i class="fa fa-paper-plane fa-fw"></i></button>
                 </div>
               </div>
 
@@ -950,6 +1039,7 @@
 
         <!-- CV -->
         <div class="page-section" id="cv">
+          <h3>Curriculum Vit&aelig</h3>
           <a href="CV.pdf"><i class="fa fa-file-pdf-o"></i> Download Cirriculum Vit&aelig (109KB)</a>
           <div class="cv-container">
             <object data="CV.pdf" type="application/pdf">
@@ -958,22 +1048,9 @@
           </div>
         </div>
 
-        <!-- HOME -->
-        <div class="page-section" id="home">
-          <!--[if lt IE 7]>
-            <p class="browsehappy center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-          <![endif]-->
-          <p class="center">
-            Welcome to the portfolio website of Craig Jeffrey.<br> Viewing the website in landscape is recommended.<br> Use
-            the buttons above to navigate.
-          </p>
-        </div>
-
       </div>
     </div>
   </div>
-
-<script src="js/grid_flip.js"></script>
 </body>
 
 </html>

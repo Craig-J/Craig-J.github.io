@@ -16,8 +16,8 @@
   margin: auto;
   overflow: visible !important;
   z-index: 5;
-  background: #1e1e1e;
-  box-shadow: 0 0 20px 4px #ff9900 inset;
+  background: rgba(30, 30, 30, 0.95);
+  box-shadow: 0 0 20px 4px #444 inset;
   cursor: default;
 }
 
@@ -50,11 +50,17 @@
 }
 
 .expanded h3 {
+  margin-top: 20px;
   font-size: 32px;
 }
 
+.expanded .project-menu {
+  border: 0;
+}
+
 .expanded .project-menu-back {
- display: inline-block; 
+  display: inline-block;
+  cursor: pointer;
 }
 
 .expanded-content row {
@@ -86,11 +92,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .expanded {
-    top: 0;
-    height: 100vh;
-  }
   .expanded-main {
-  margin: 10px;
-}
+    margin: 10px;
+  }
 }

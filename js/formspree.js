@@ -1,11 +1,11 @@
 var $contactForm = $('#contact_form');
 $(document).ready(function() {
-    $('.submit').click(function(e) {
+    $contactForm.submit(function(e) {
         e.preventDefault();
         $.ajax({
             url: '//formspree.io/craigjeffrey3@gmail.com',
             method: 'POST',
-            data: $contactForm.serialize(),
+            data: $(this).serialize(),
             dataType: 'json',
             beforeSend: function() {
                 $contactForm.append('<div class="alert alert--loading">Sending message…</div>');
