@@ -38,23 +38,17 @@ $(document).ready(function () {
     
     element.addEventListener('click', function () {
       if (!element.classList.contains(expandedClass)) {
-        lastoffset = $(window).scrollTop();//$(this).offset().top - ($(this).height() * 0.5);
-
+        lastoffset = $(window).scrollTop();
         expand(flip, expandedClass);
-
         $("html, body").animate({ scrollTop: $('.main-content').offset().top - 50 }, "slow");
-
       }
     });
 
-    back_button.addEventListener('click', function() {
+    back_button.addEventListener('click', function(event) {
       if (element.classList.contains(expandedClass)) {
-        contract(flip, expandedClass);
         event.stopPropagation();
-
-        
+        contract(flip, expandedClass);
         $("html, body").animate({ scrollTop: lastoffset }, "slow");
-        
       }
     });
       
@@ -69,25 +63,21 @@ $(document).ready(function () {
     e.stopPropagation();
   });
 
+  var $About = $('#about');
+  var $Projects = $('#projects');
+  var $CV = $('#cv');
+  var $Contact = $('#contact');
+  var $CurrentSection = $About;
+
   $('.intro-button').click(function(){
     $('.intro').removeClass('intro');
-    $('html, body').stop().animate({
-          'scrollTop': $('html').offset().top
-      }, 500, 'swing', function () {
-          window.location.hash = "about";
-      });
+    $CurrentSection.addClass('active-section');
   })
 
-  $('a[href^="#"]').on('click',function (e) {
-      e.preventDefault();
-
-      var target = this.hash;
-      var $target = $(target);
-
-      $('html, body').stop().animate({
-          'scrollTop': $target.offset().top
-      }, 300, 'swing', function () {
-        window.location.hash = target;
-      });
+  $('button[value^="#"]').click(function () {
+    $CurrentSection.removeClass('active-section');
+    var target = this.value;
+    $CurrentSection = $(target);
+    $CurrentSection.addClass('active-section');
   });
 });
