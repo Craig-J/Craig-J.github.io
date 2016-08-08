@@ -139,6 +139,22 @@ position: static;
   padding: 0;
 }
 
+button.link {
+  border: 0;
+  background: 0;
+  padding: 0;
+  color: #63a52a;
+  -webkit-transition: all 150ms ease-in-out;
+  -moz-transition: all 150ms ease-in-out;
+  -ms-transition: all 150ms ease-in-out;
+  -o-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+button.link:hover {
+  text-decoration: underline;
+  color: #90D355;
+}
+
 .btn-style {
   background-image: -webkit-linear-gradient(top,#ff4500 0,#ff9900 100%);
   background-image: -o-linear-gradient(top,#ff4500 0,#ff9900 100%);
