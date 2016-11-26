@@ -116,9 +116,4 @@ $(document).ready(function () {
     $CurrentSection = $(target);
     $CurrentSection.addClass('active-section');
   });
-
-  $("#rhythmirFrame").load("http://craigjeffrey.net/RhythMIR/", function(){
-    $("#rhythmirFrame").contents().find("body").css("background","transparent");
-    $("#rhythmirFrame").contents().find("body").css("overflow-y","scroll");
-  });
 });
