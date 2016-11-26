@@ -116,10 +116,4 @@ $(document).ready(function () {
     $CurrentSection = $(target);
     $CurrentSection.addClass('active-section');
   });
-
-  // sets embedded iframes body background to transparent and enables scrollbar
-  $(".fixed-position iframe").load( function(){
-    $(".fixed-position iframe").contents().find("body").css("background","transparent");
-    $(".fixed-position iframe").contents().find("body").css("overflow-y","scroll");
-  });
 });
