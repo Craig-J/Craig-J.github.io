@@ -119,6 +119,7 @@ $(document).ready(function () {
 
   // sets embedded iframes body background to transparent and enables scrollbar
   $(".fixed-position iframe").load( function(){
-    $(".fixed-position iframe").contents().find("body").css("background:transparent","overflow:scroll");
+    $(".fixed-position iframe").contents().find("body").css("background","transparent");
+    $(".fixed-position iframe").contents().find("body").css("overflow-y","scroll");
   });
 });
