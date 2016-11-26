@@ -21,26 +21,55 @@ $(document).ready(function () {
     flip.play();
   }
 
-  // Event subscription
+  $.fn.disableScroll = function() {
+    window.oldScrollPos = $(window).scrollTop();
 
+    $(window).on('scroll.scrolldisabler', function (event) {
+       $(window).scrollTop( window.oldScrollPos );
+       event.preventDefault();
+    });
+  };
+
+  $.fn.enableScroll = function() {
+      $(window).off('scroll.scrolldisabler');
+  };
+
+  // Event subscription
+  var html = $("html");
+  var body = $("body");
   var elements = document.querySelectorAll('.expandable-content');
-  var back_buttons = document.querySelectorAll('.project-menu-back');
+  var elementsFixedPosition = document.querySelectorAll('.fixed-position');
+  var backButtons = document.querySelectorAll('.project-menu-back');
   var expandedClass = 'expanded';
-  var lastoffset;
+  var lastOffset;
   
   var _loop = function () {
     var element = elements[i];
-    var back_button = back_buttons[i];
+    var back_button = backButtons[i];
     var flip = new FLIP({
       element: element,
       duration: 150
     });
+
+    var isFixedOverlay = false;
+
+    elementsFixedPosition.forEach(function(value){
+      if(value === element)
+        isFixedOverlay = true;
+    });
     
     element.addEventListener('click', function () {
       if (!element.classList.contains(expandedClass)) {
-        lastoffset = $(window).scrollTop();
+        lastOffset = $(window).scrollTop();
         expand(flip, expandedClass);
-        $("html, body").animate({ scrollTop: $('.main-content').offset().top - 50 }, "slow");
+        if(isFixedOverlay)
+        {
+          body.disableScroll();
+        }
+        else
+        {
+          $("html, body").animate({ scrollTop: $('.main-content').offset().top - 50 }, "slow");
+        }
       }
     });
 
@@ -48,7 +77,14 @@ $(document).ready(function () {
       if (element.classList.contains(expandedClass)) {
         event.stopPropagation();
         contract(flip, expandedClass);
-        $("html, body").animate({ scrollTop: lastoffset }, "slow");
+        if(isFixedOverlay)
+        {
+          body.enableScroll();
+        }
+        else
+        {
+          $("html, body").animate({ scrollTop: lastOffset }, "slow");
+        }
       }
     });
       
@@ -79,5 +115,10 @@ $(document).ready(function () {
     var target = this.value;
     $CurrentSection = $(target);
     $CurrentSection.addClass('active-section');
+  });
+
+  // sets embedded iframes body background to transparent and enables scrollbar
+  $(".fixed-position iframe").load( function(){
+    $(".fixed-position iframe").contents().find("body").css("background:transparent","overflow:scroll");
   });
 });

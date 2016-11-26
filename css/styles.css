@@ -326,6 +326,11 @@ button.link:hover {
   background: transparent;
 }
 
+.navigation-menu li i.fa-external-link
+{
+  color: #63a52a;
+}
+
 .navigation-menu li a:hover,
 .navigation-menu li button:hover {
   background: #FF9900;

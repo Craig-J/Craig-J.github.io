@@ -5,25 +5,8 @@ $(document).ready(function () {
     function GetLatestReleaseInfo() {
         $.getJSON("https://api.github.com/repos/Craig-J/RhythMIR/releases").done(function (releases) {
             var asset = releases[0].assets[0];
-            /*var downloadCount = 0;
-            for (var i = 0; i < release.assets.length; i++) {
-                downloadCount += release.assets[i].download_count;
-            }
-            var oneHour = 60 * 60 * 1000;
-            var oneDay = 24 * oneHour;
-            var dateDiff = new Date() - new Date(asset.updated_at);
-            var timeAgo;
-            if (dateDiff < oneDay)
-            {
-                timeAgo = (dateDiff / oneHour).toFixed(1) + " hours ago";
-            }
-            else
-            {
-                timeAgo = (dateDiff / oneDay).toFixed(1) + " days ago";
-            }*/
-            //var releaseInfo = release.name + " was updated " + timeAgo + " and downloaded " + downloadCount.toLocaleString() + " times.";
+            var download_size_text = "(" + (asset.size / (1024 * 1024)).toLocaleString() + "MB)";
             $(".rhythmir_download").attr("href", asset.browser_download_url);
-            //$(".release-info").text(releaseInfo);
-            //$(".release-info").fadeIn("slow");
+            $(".rhythmir_download_size").text(download_size_text);
         });
     }
