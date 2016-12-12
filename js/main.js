@@ -104,11 +104,12 @@ $(document).ready(function () {
   var $CV = $('#cv');
   var $Contact = $('#contact');
   var $CurrentSection = $About;
+  $CurrentSection.addClass('active-section');
 
-  $('.intro-button').click(function(){
-    $('.intro').removeClass('intro');
-    $CurrentSection.addClass('active-section');
-  })
+  /*$('.intro-button').click(function(){
+      $('.intro').removeClass('intro');
+      $CurrentSection.addClass('active-section');
+  })*/
 
   $('button[value^="#"]').click(function () {
     $CurrentSection.removeClass('active-section');
