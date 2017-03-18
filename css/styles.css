@@ -269,7 +269,7 @@ button.link {
 .navigation-menu {
 	position: relative;
 	width: 85%;
-	max-width: 100em;
+	max-width: 80em;
 	height: auto;
 	margin: 0 auto;
 	z-index: 5;
@@ -353,7 +353,7 @@ button.link {
 	position: relative;
 	opacity: 1;
 	width: 85%;
-	max-width: 100em;
+	max-width: 80em;
 	margin: 0 auto;
 	box-shadow: 0 0 20px 4px #444;
 	background: rgba(30,30,30, 0.85);
@@ -387,6 +387,7 @@ button.link {
 #about .row {
 	padding: 0 10px;
 	margin: 0;
+	margin-bottom: 10px;
 }
 
 .about-picture {
@@ -400,6 +401,7 @@ button.link {
 
 .languages {
 	margin: 10px;
+	text-align: center;
 }
 
 	.languages li {
