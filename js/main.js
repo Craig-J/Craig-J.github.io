@@ -101,8 +101,6 @@ $(document).ready(function () {
 
   var $About = $('#about');
   var $Projects = $('#projects');
-  var $CV = $('#cv');
-  var $Contact = $('#contact');
   var $CurrentSection = $About;
   $CurrentSection.addClass('active-section');
 
