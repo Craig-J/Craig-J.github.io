@@ -386,8 +386,11 @@ button.link {
 #about .col-md-12,
 #about .row {
 	padding: 0 10px;
-	margin: 0;
-	margin-bottom: 10px;
+	margin: 10px 0;
+}
+
+#timeline li {
+	padding: 4px 10px;
 }
 
 .about-picture {
